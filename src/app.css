@@ -2,28 +2,24 @@
     padding: 0;
     margin: 0;
 }
-header {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    font-size: 24px;
 
 
-    background-color: gray;
-
-}
-a{
-    text-decoration: none;
-    color: #fff;
-}
-a:hover {
-    text-decoration: underline;
-}
 .route {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     font-size: 32px;
+}
+
+
+.active {
+    color: rgb(173, 177, 214);
+}
+
+.center {
+    padding-top: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }

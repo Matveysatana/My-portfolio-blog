@@ -1,10 +1,10 @@
 import React from "react";
 
-function Homepage (){
+function HomePage (){
     return (
-        <div className="home">
+        <div className="home ">
             <p>Главная страница</p>
         </div>
     )
 }
-export  default Homepage;
+export default HomePage;

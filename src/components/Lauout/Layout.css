@@ -1,0 +1,58 @@
+header {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.logo {
+    padding-left: 46px;
+}
+
+.navigate {
+    display: flex;
+
+    gap: 35px;
+
+}
+.padding-right {
+    padding-right: 36px;
+}
+.navigate a {
+    text-decoration: none;
+    color: #000;
+
+    font-weight: medium;
+    font-size: 18px;
+
+    font-family: "Termina";
+}
+
+footer {
+    width: 100%;
+    height: 152px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0 0 0;
+
+    background-color: #F3F3F3;
+}
+
+.footer-navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.copyrarte {
+    display: flex;
+    align-items: center;
+
+    color: Light;
+}
