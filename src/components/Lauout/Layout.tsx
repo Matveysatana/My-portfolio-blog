@@ -9,40 +9,52 @@ const Layout = () => {
                     <img src="%PUBLIC_URL%/logo.webp" alt="logo" className="logo-image" />
                 </div>
 
-                <nav className="navigate padding-right">
-                    <NavLink to="/">Главная</NavLink>
-                    <NavLink to="/about">Обо мне</NavLink>
-                    <NavLink to="/posts">Блог</NavLink>
-                    <NavLink to="/portfolio">Портфолио</NavLink>
-                    <NavLink to="/contacts">Контакты</NavLink>
+                <nav className="navigate">
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/about">About Me</NavLink>
+                    <NavLink to="/posts">Blog</NavLink>
+                    <NavLink to="/portfolio">Portfolio</NavLink>
+                    <NavLink to="/contacts">Contacts</NavLink>
                 </nav>
 
             </header>
 
-            <section className="center">
+            <section className="">
                 <Outlet />
             </section>
 
-            
+
 
             <footer>
                 <div className="footer-navigation">
                     <div className="logo">
-                        <img src="%PUBLIC_URL%/logo.webp" alt="logo" className="logo-image" />
+                        <img src="/public/logo.webp" alt="logo" className="logo-image" />
                     </div>
 
                     <nav className="navigate">
-                        <NavLink to="/">Главная</NavLink>
-                        <NavLink to="/about">Обо мне</NavLink>
-                        <NavLink to="/posts">Блог</NavLink>
-                        <NavLink to="/portfolio">Портфолио</NavLink>
-                        <NavLink to="/contacts">Контакты</NavLink>
+                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/about">About Me</NavLink>
+                        <NavLink to="/posts">Blog</NavLink>
+                        <NavLink to="/portfolio">Portfolio</NavLink>
+                        <NavLink to="/contacts">Contacts</NavLink>
                     </nav>
 
                     <div className="footer-social">
-                        <img src="/src/assets/icons/svg/vkontacte.svg" alt="Vk" />
-                        <img src="/src/assets/icons/svg/telegramm.svg" alt="Telegramm" />
-                        <img src="/src/assets/icons/svg/github.svg" alt="GitHub" />
+                        <a href="https://vk.com/woydock" target="blank" className="socail-link">
+                            <img src="/public/svg/vkontacte.svg" alt="Vk" />
+                        </a>
+
+                        <a href="#" target="blank" className="socail-link">
+                            <img src="/public/svg/telegramm.svg" alt="Telegramm" />
+                        </a>
+
+                        <a href="#" target="blank" className="socail-link">
+                            <img src="/public/svg/github.svg" alt="GitHub" />
+                        </a>
+
+                        <a href="#" target="blank" className="socail-link">
+                            <img src="/public/logo.webp" alt="logo" />
+                        </a>
                     </div>
                 </div>
 

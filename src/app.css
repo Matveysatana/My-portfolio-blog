@@ -1,7 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Termina";
 }
+
+@font-face {
+    font-family: 'Termina';
+    src: url('./assets/fonts/Termina-Medium.otf') format('truetype');
+  }
 
 
 .route {
@@ -12,14 +18,15 @@
 }
 
 
-.active {
-    color: rgb(173, 177, 214);
-}
-
-.center {
+/* .center {
     padding-top: 40px;
     font-size: 18px;
     display: flex;
     justify-content: center;
     gap: 20px;
+} */
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
 }

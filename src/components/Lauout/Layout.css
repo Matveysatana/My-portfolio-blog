@@ -6,7 +6,7 @@ header {
     align-items: center;
     justify-content: space-between;
     
-    
+    margin-bottom: 50px;
 }
 .logo {
     padding-left: 46px;
@@ -14,21 +14,25 @@ header {
 
 .navigate {
     display: flex;
-
-    gap: 35px;
-
+    gap: 20px;
 }
-.padding-right {
-    padding-right: 36px;
-}
+
+
 .navigate a {
     text-decoration: none;
     color: #000;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
 
-    font-weight: medium;
-    font-size: 18px;
+.navigate a:hover {
+    color: #007BFF;
+    
+}
 
-    font-family: "Termina";
+.navigate a.active {
+    color: #007BFF;
 }
 
 footer {
@@ -41,6 +45,8 @@ footer {
     padding: 20px 0 0 0;
 
     background-color: #F3F3F3;
+
+    margin-top: 50px;
 }
 
 .footer-navigation {
@@ -53,6 +59,9 @@ footer {
 .copyrarte {
     display: flex;
     align-items: center;
-
-    color: Light;
+    justify-content: center;
+    width: 100%;
+    color: #8695A4;
+    background-color: #000000;
 }
+
