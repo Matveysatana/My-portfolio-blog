@@ -35,3 +35,72 @@
     box-shadow: 0 6px 12px rgba(44, 108, 199, 0.5); /* Более глубокая тень */
     transform: translateY(-2px); /* Лёгкий подъём при наведении */
 }
+
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .skill-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    cursor: pointer;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .skill-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .skill-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .skill-progress {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .skill-fill {
+    background-color: #007BFF;
+    height: 100%;
+    transition: width 0.4s ease;
+  }
+  
+  .skill-percentage {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+  }
+  

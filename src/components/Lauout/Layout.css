@@ -1,21 +1,32 @@
-header {
+.header {
+    top: 0;
+    position: sticky;
     width: 100%;
     height: 100px;
-
+  
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+  
     margin-bottom: 50px;
-}
+    z-index: 1;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent;
+  }
+  
+  .header.scrolled {
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
 
 .logo {
-    border-radius: 8px;
     padding-left: 46px;
 
     & img {
         height: 40px;
         width: 40px;
+        border-radius: 8px;
     }
 }
 
@@ -44,7 +55,7 @@ header {
 
 .footer {
     width: 100%;
-    height: 152px;
+    
 
     display: flex;
     justify-content: center;
@@ -61,6 +72,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 10px 0;
 }
 
 .footer-social {
