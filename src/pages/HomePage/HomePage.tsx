@@ -6,7 +6,6 @@ import HtmlIcn from 'assets/images/svg/html5.svg'
 import './HomePage.css'
 
 
-
 const ImageRender = (skill: string) => {
     switch (skill) {
         case "HTML":
@@ -15,9 +14,6 @@ const ImageRender = (skill: string) => {
             return
     }
 }
-
-
-
 
 function HomePage() {
 

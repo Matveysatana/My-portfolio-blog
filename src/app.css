@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Termina', 'Arial', sans-serif;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -17,7 +18,11 @@
     font-size: 32px;
 }
 
-
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .conteiner {
     max-width: 1200px;

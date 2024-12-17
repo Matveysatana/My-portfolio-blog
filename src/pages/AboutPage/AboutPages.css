@@ -1,0 +1,25 @@
+
+.about-navigation {
+    height: 200px;
+    background-color: #F3F3F3;
+}
+
+.about-menu {
+    gap: 20px;
+    font-size: 18px;
+}
+
+
+.about-menu-link  {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.about-menu-link:hover {
+    color: #007BFF;
+    transform: scale(1.1);
+    background-color: rgba(0, 123, 255, 0.1); 
+    border-radius: 25px;
+}

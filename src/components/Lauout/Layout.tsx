@@ -7,13 +7,14 @@ import GhIcn from 'assets/images/svg/github.svg';
 import LogoIcn from 'assets/images/logo.webp';
 
 const Layout = () => {
+
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -30,8 +31,7 @@ const Layout = () => {
         <nav className="navigate">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About Me</NavLink>
-          <NavLink to="/posts">Blog</NavLink>
-          <NavLink to="/portfolio">Portfolio</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
           <NavLink to="/contacts">Contacts</NavLink>
         </nav>
       </header>
@@ -49,8 +49,7 @@ const Layout = () => {
           <nav className="navigate">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about">About Me</NavLink>
-            <NavLink to="/posts">Blog</NavLink>
-            <NavLink to="/portfolio">Portfolio</NavLink>
+            <NavLink to="/blog">Blog</NavLink>
             <NavLink to="/contacts">Contacts</NavLink>
           </nav>
 
