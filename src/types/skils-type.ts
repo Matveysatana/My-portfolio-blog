@@ -1,4 +1,4 @@
-export interface ISkils {
+export interface ISkills {
     name: string;
     description: string;
     percentage: number;

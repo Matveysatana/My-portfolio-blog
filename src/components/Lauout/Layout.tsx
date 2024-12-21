@@ -5,6 +5,7 @@ import VkIcn from 'assets/images/svg/vkontacte.svg';
 import TgIcn from 'assets/images/svg/telegramm.svg';
 import GhIcn from 'assets/images/svg/github.svg';
 import LogoIcn from 'assets/images/logo.webp';
+import Image from "../Image/Image";
 
 const Layout = () => {
 
@@ -25,7 +26,7 @@ const Layout = () => {
     <>
       <header className={`header ${isScrolled ? "scrolled" : ""}`}>
         <div className="logo">
-          <img src={LogoIcn} alt="logo" className="logo-image" />
+          <Image src={LogoIcn} alt="logo" className="logo-image" />
         </div>
 
         <nav className="navigate">

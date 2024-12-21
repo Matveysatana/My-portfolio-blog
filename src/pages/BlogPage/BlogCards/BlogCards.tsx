@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./BlogCards.css";
 import { blogPosts } from "store/posts";
+import {PostType} from "../../../types/post-type";
 
 const BlogCards = () => {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [filteredPosts, setFilteredPosts] = useState(blogPosts);
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [filteredPosts, setFilteredPosts] = useState<PostType[]>(blogPosts);
 
   // Функция для фильтрации карточек по запросу
   const handleSearch = (query:any) => {
