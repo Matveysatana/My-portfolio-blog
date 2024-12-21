@@ -1,11 +1,20 @@
 import {ISkils} from 'types/skils-type'
+import HtmlIcn from 'assets/images/svg/html5.svg'
+
+
+
+
+
+
+
+
 
 export const skills:ISkils[] = [
     {
         name: "HTML",
         description: "Разметка для создания веб-страниц.",
         percentage: 70,
-        image: "assets/images/svg/html5.svg",
+        image: {HtmlIcn},
         id: 1
     },
     {

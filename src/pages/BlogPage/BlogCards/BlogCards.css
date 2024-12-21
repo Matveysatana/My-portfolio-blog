@@ -1,0 +1,130 @@
+/* Общие стили для компонента BlogCards */
+.blog-cards-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  
+  /* Стили для поисковой строки */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  
+  .search-container input {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 30px;
+    outline: none;
+    width: 300px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Эффект при наведении и фокусировке */
+  .search-container input:hover,
+  .search-container input:focus {
+    border-color: #3a86ff; 
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(58, 134, 255, 0.4); 
+  }
+  
+  /* Добавление иконки в поисковый инпут */
+  .search-container input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .search-container input:focus::placeholder {
+    color: transparent;
+    font-style: normal;
+  }
+  
+
+  /* Стили для контейнера карточек */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Стили для каждой карточки */
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 380px; /* Устанавливаем высоту карточек одинаковой */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .card-content h3 {
+    font-size: 20px;
+    color: #007bff;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .card-content p {
+    margin-bottom: 10px;
+    color: #6c757d;
+    text-align: left;
+  }
+  
+  .card-date {
+    font-size: 12px;
+    color: #adb5bd;
+    text-align: left;
+  }
+  
+  .card-button {
+    padding: 12px 20px;
+    background-color: #3a86ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: flex-start; /* Кнопка выравнивается по левому краю */
+  }
+  
+  .card-button:hover {
+    background-color: #2c6cc7;
+    transform: scale(1.05);
+  }
+  
+  .no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+  }

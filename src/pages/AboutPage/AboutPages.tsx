@@ -10,18 +10,19 @@ function AboutPages(props: Igreeting) {
 
     const { greet } = props
 
-    return (
-        <div className="container">
-            <div className="about-navigation center">
-                <nav className="about-menu center">
-                    <a href="#about" className="about-menu-link">О себе</a>
-                    <a href="#skills" className="about-menu-link">Навыки</a>
-                    <a href="#education" className="about-menu-link">Достижения</a>
-                    <a href="#hobby" className="about-menu-link">Увлечения</a>
-                    <a href="#target" className="about-menu-link">Цели</a>
-                </nav>
+    return (<>
 
-            </div>
+        <div className="backgraund center">
+            <nav className="about-menu center">
+                <a href="#about" className="about-menu-link">О себе</a>
+                <a href="#skills" className="about-menu-link">Навыки</a>
+                <a href="#education" className="about-menu-link">Достижения</a>
+                <a href="#hobby" className="about-menu-link">Увлечения</a>
+                <a href="#target" className="about-menu-link">Цели</a>
+            </nav>
+        </div>
+        <div className="conteiner">
+
 
             <section id="about" className="section-about">
                 <h2>Обо мне</h2>
@@ -60,6 +61,7 @@ function AboutPages(props: Igreeting) {
 
 
         </div>
+    </>
     )
 };
 export default AboutPages;

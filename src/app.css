@@ -9,15 +9,7 @@
     font-family: 'Termina';
     src: url('./assets/fonts/Termina-Medium.otf') format('truetype');
   }
-
-
-.route {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    font-size: 32px;
-}
-
+/* основные стили для блоков */
 .center{
     display: flex;
     justify-content: center;
@@ -27,4 +19,46 @@
 .conteiner {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.backgraund {
+    height: 150px;
+    background-color: #F3F3F3;
+    margin-bottom: 60px;
+}
+
+.greeting-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.greeting {
+    max-width: 500px;
+}
+
+.greeting-title {
+    font-size: 32px;
+}
+
+.greeting-description {
+    font-size: 18px;
+    margin: 25px 0;
+}
+
+.greeting-button {
+    border: none;
+    padding: 12px 24px; 
+    color: #fff;
+    border-radius: 30px; 
+    background-color: #5C8DFF; 
+    box-shadow: 0 8px 20px rgba(92, 141, 255, 0.3); 
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.greeting-button:hover {
+    background-color: #3A7DFF; 
+    box-shadow: 0 10px 25px rgba(58, 125, 255, 0.5); 
+    transform: translateY(-2px) scale(1.05);
 }
