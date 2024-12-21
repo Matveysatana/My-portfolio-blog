@@ -16,7 +16,7 @@ function AboutPages(props: Igreeting) {
                 <nav className="about-menu center">
                     <a href="#about" className="about-menu-link">О себе</a>
                     <a href="#skills" className="about-menu-link">Навыки</a>
-                    <a href="#education" className="about-menu-link">Образование и достижения</a>
+                    <a href="#education" className="about-menu-link">Достижения</a>
                     <a href="#hobby" className="about-menu-link">Увлечения</a>
                     <a href="#target" className="about-menu-link">Цели</a>
                 </nav>

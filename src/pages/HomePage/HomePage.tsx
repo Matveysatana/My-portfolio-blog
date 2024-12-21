@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { skills } from 'store/skils';
 import { ISkils } from 'types/skils-type'
 import HtmlIcn from 'assets/images/svg/html5.svg'
-
+import MyPhoto from 'assets/images/logo.webp'
 import './HomePage.css'
 
 
@@ -32,7 +32,7 @@ function HomePage() {
                 </div>
 
                 <div className="my-photo">
-                    <img className="my-photo-img" src="" alt="Фото Автора" />
+                    <img className="my-photo-img" src={MyPhoto} alt="Фото Автора" />
                 </div>
             </div>
 
