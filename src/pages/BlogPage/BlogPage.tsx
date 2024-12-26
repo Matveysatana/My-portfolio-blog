@@ -1,6 +1,5 @@
 import './BlogPages.css'
-import BlogCards from './BlogCards/BlogCards';
-import { blogPosts } from 'store/posts';
+import BlogCards from 'components/BlogCards/BlogCards';
 
 
 
@@ -23,11 +22,11 @@ function BlogPages() {
                     </div>
 
                     <div className="greeting">
-                        <img src="/src/assets/images/me.jpg" alt="фото блога" className="blog-img" />
+                        <img src="/src/assets/images/blog.png" alt="фото блога" className="blog-img" />
                     </div>
                 </div>
 
-                <BlogCards/>
+                <BlogCards />
             </div>
         </>
     )

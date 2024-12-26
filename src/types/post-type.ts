@@ -1,10 +1,10 @@
 
 
 export interface PostType {
+    id: string;
     title: string;
     description: string;
-    image: string;
-    link: string;
+    src: string;
     createdAt: string;
     category: string;
 }

@@ -1,46 +1,9 @@
 
-
-
 .about-menu {
     gap: 20px;
     font-size: 18px;
 }
 
-/* 1 вид ссылок изначальный */
-/* .about-menu-link  {
-    text-decoration: none;
-    color: #000;
-    padding: 10px 15px;
-    transition: all 0.3s ease;
-}
-
-.about-menu-link:hover {
-    color: #007BFF;
-    transform: scale(1.1);
-    background-color: rgba(0, 123, 255, 0.1); 
-    border-radius: 25px;
-} */
-
-
-/* 2 вид ссылок черные */
-/* .about-menu-link {
-    text-decoration: none;
-    color: #000;
-    padding: 10px 15px;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-}
-
-.about-menu-link:hover {
-    color: #fff;
-    background-color: #000; 
-    transform: scale(1.1); 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-} */
-
-
-
-/* 3 вид ссылок небесно голубой */
 .about-menu-link {
     text-decoration: none;
     color: #333; 
@@ -54,5 +17,22 @@
     background-color: #5DADE2; 
     transform: scale(1.1); 
     box-shadow: 0 4px 6px rgba(93, 173, 226, 0.5); 
+} 
+
+section {
+    margin-bottom: 100px;
 }
 
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    color: #007bff; 
+}
+
+.section-description {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+
+    margin: 20px 0px;
+}

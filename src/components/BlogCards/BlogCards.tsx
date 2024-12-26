@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "./BlogCards.css";
 import { blogPosts } from "store/posts";
-import {PostType} from "../../../types/post-type";
+import { PostType } from "../../types/post-type";
+import Image from "components/Image/Image";
 
 const BlogCards = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [filteredPosts, setFilteredPosts] = useState<PostType[]>(blogPosts);
 
   // Функция для фильтрации карточек по запросу
-  const handleSearch = (query:any) => {
+  const handleSearch = (query: any) => {
     setSearchQuery(query);
     const filtered = blogPosts.filter(
       (post) =>
@@ -36,7 +37,7 @@ const BlogCards = () => {
         {filteredPosts.length > 0 ? (
           filteredPosts.map((post, index) => (
             <div key={index} className="card">
-              <img src={post.image} alt={post.title} className="card-image" />
+              <img src={post.src} alt={post.title} className="card-image" />
               <div className="card-content">
                 <h3>{post.title}</h3>
                 <p>{post.description}</p>

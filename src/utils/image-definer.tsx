@@ -1,17 +1,17 @@
-import HtmlIcn from 'assets/images/svg/html5.svg'
-import CssIcn from 'assets/images/svg/css3.svg';
-import JsIcn from 'assets/images/svg/javascript.svg';
-import ReactIcn from 'assets/images/svg/react.svg';
-import TsIcn from 'assets/images/svg/typescript.svg';
-import PhpIcn from 'assets/images/svg/php.svg';
-import AngularIcn from 'assets/images/svg/angular.svg';
-import JqueryIcn from 'assets/images/svg/jquery.svg';
+import HtmlIcn from 'assets/icons/svg/html5.svg'
+import CssIcn from 'assets/icons/svg/css3.svg';
+import JsIcn from 'assets/icons/svg/javascript.svg';
+import ReactIcn from 'assets/icons/svg/react.svg';
+import TsIcn from 'assets/icons/svg/typescript.svg';
+import PhpIcn from 'assets/icons/svg/php.svg';
+import AngularIcn from 'assets/icons/svg/angular.svg';
+import JqueryIcn from 'assets/icons/svg/jquery.svg';
 
 
 export const ImageDefiner = (name: string) => {
   switch (name) {
     case "HTML":
-      return <HtmlIcn /> ;
+      return <HtmlIcn />;
     case "CSS":
       return <CssIcn />;
     case "JavaScript":

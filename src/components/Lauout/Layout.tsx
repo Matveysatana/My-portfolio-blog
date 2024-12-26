@@ -1,9 +1,9 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 import './Layout.css';
-import VkIcn from 'assets/images/svg/vkontacte.svg';
-import TgIcn from 'assets/images/svg/telegramm.svg';
-import GhIcn from 'assets/images/svg/github.svg';
+import VkIcn from 'assets/icons/svg/vkontacte.svg';
+import TgIcn from 'assets/icons/svg/telegramm.svg';
+import GhIcn from 'assets/icons/svg/github.svg';
 import LogoIcn from 'assets/images/logo.webp';
 import Image from "../Image/Image";
 
