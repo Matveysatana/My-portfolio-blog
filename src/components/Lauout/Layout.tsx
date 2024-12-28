@@ -6,6 +6,7 @@ import TgIcn from 'assets/icons/svg/telegramm.svg';
 import GhIcn from 'assets/icons/svg/github.svg';
 import LogoIcn from 'assets/images/logo.webp';
 import Image from "../Image/Image";
+import { Link } from "react-router-dom";
 
 const Layout = () => {
 
@@ -26,7 +27,10 @@ const Layout = () => {
     <>
       <header className={`header ${isScrolled ? "scrolled" : ""}`}>
         <div className="logo">
-          <Image src={LogoIcn} alt="logo" className="logo-image" />
+          <Link to={"/"}>
+            <Image src={LogoIcn} alt="logo" className="logo-image" />
+          </Link>
+
         </div>
 
         <nav className="navigate">

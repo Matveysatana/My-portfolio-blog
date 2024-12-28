@@ -128,3 +128,7 @@
     color: #555;
     margin-top: 20px;
   }
+
+a {
+  text-decoration: none;
+}

@@ -54,16 +54,13 @@
 
 .footer {
     width: 100%;
-    
 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px 0 0 0;
-
     background-color: #F3F3F3;
 
-    margin-top: 50px;
 }
 
 .footer-navigation {

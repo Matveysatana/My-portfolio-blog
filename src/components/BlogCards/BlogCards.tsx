@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import "./BlogCards.css";
 import { blogPosts } from "store/posts";
 import { PostType } from "../../types/post-type";
-import Image from "components/Image/Image";
+import { Link } from "react-router-dom";
 
 const BlogCards = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [filteredPosts, setFilteredPosts] = useState<PostType[]>(blogPosts);
 
-  // Функция для фильтрации карточек по запросу
   const handleSearch = (query: any) => {
     setSearchQuery(query);
     const filtered = blogPosts.filter(
@@ -22,7 +21,6 @@ const BlogCards = () => {
 
   return (
     <div className="blog-cards-container">
-      {/* Поисковая строка */}
       <div className="search-container">
         <input
           type="text"
@@ -32,7 +30,6 @@ const BlogCards = () => {
         />
       </div>
 
-      {/* Отображение карточек */}
       <div className="cards-container">
         {filteredPosts.length > 0 ? (
           filteredPosts.map((post, index) => (
@@ -42,7 +39,10 @@ const BlogCards = () => {
                 <h3>{post.title}</h3>
                 <p>{post.description}</p>
                 <p className="card-date">{post.createdAt}</p>
-                <button className="card-button">Узнать подробнее</button>
+                <Link to={`/blog/${post.id}`} className="card-button">
+                  Узнать подробнее
+                </Link>
+
               </div>
             </div>
           ))

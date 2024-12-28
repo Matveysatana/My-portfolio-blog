@@ -1,7 +1,6 @@
 import React from "react";
 import './AboutPages.css'
 import SkillsCards from "components/SkillsCards/SkillsCards";
-
 interface Igreeting {
     greet: string
 }
@@ -14,15 +13,15 @@ function AboutPages(props: Igreeting) {
 
         <div className="backgraund center">
             <nav className="about-menu center">
-                <a href="#about-me" className="about-menu-link">О себе</a>
-                <a href="#skills" className="about-menu-link">Навыки</a>
-                <a href="#achivements" className="about-menu-link">Достижения</a>
-                <a href="#hobbies" className="about-menu-link">Увлечения</a>
-                <a href="#target" className="about-menu-link">Цели</a>
+                <a href="#section-about-me" className="about-menu-link">О себе</a>
+                <a href="#section-skills" className="about-menu-link">Навыки</a>
+                <a href="#section-achivements" className="about-menu-link">Достижения</a>
+                <a href="#section-hobbies" className="about-menu-link">Увлечения</a>
+                <a href="#section-target" className="about-menu-link">Цели</a>
             </nav>
         </div>
         <div className="conteiner">
-            <section id="about-me" className="section-about">
+            <section id="section-about-me" className="section-about">
                 <div className="conteiner">
                     <div className="greeting-page">
                         <div className="greeting">
@@ -39,20 +38,20 @@ function AboutPages(props: Igreeting) {
             </section>
 
 
-            <section id="skills" className="section-about">
+            <section id="section-skills" className="section-about">
                 <h2 className="section-title">Навыки</h2>
                 <h3 className="section-description">Я постоянно совершенствую свои навыки, чтобы достичь большего</h3>
                 <SkillsCards />
             </section>
 
 
-            <section id="achivements" className="section-about">
+            <section id="section-achivements" className="section-about">
                 <h2 className="section-title">Образование и достижения</h2>
                 <h3 className="section-description">Каждое достижение — это шаг к моим целям</h3>
             </section>
 
 
-            <section id="hobbies" className="section-about">
+            <section id="section-hobbies" className="section-about">
                 <h2 className="section-title">Увлечения</h2>
                 <h3 className="section-description">Мои увлечения делают мою жизнь ярче и насыщеннее</h3>
 
@@ -60,7 +59,7 @@ function AboutPages(props: Igreeting) {
             </section>
 
 
-            <section id="target" className="section-about">
+            <section id="section-target" className="section-about">
                 <h2 className="section-title">Цели</h2>
                 <h3 className="section-description">Моя главная цель — двигаться вперёд и расти</h3>
 
