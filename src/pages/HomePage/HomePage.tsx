@@ -21,7 +21,7 @@ function HomePage() {
         </div>
 
         <div className="greeting">
-          <img className="my-photo-img" src="" alt="Фото Автора" />
+          <img className="greeting-img" src="" alt="Фото Автора" />
         </div>
       </div>
       

@@ -1,6 +1,5 @@
 
 .about-menu {
-    gap: 20px;
     font-size: 18px;
 }
 
@@ -35,4 +34,221 @@ section {
     color: #333;
 
     margin: 20px 0px;
+}
+
+.section-about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Обо мне */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.about-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #007BFF;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-facts {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.about-facts li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Образование и достижения */
+/* Общие стили для линии времени */
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .timeline-step {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid #0078d7;
+    background: #e6f2fa; /* Мягкий голубой оттенок */
+    border-radius: 8px;
+    position: relative;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .timeline-step:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0078d7;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-step p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  /* Эффект точки на линии */
+  .timeline-step::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 12px;
+    width: 12px;
+    height: 12px;
+    background: #0078d7;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 120, 215, 0.6);
+  }
+  
+/* Общие стили для секции достижений */
+.achievements-section {
+    margin: 3rem 0;
+    text-align: center;
+  }
+  
+  .achievements-heading {
+    font-size: 1.8rem;
+    color: #0078d7;
+    margin-bottom: 2rem;
+  }
+  
+  /* Контейнер для карточек */
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  /* Стили для каждой карточки */
+  .project-card {
+    flex: 1 1 calc(25% - 1rem); /* Адаптивная ширина */
+    max-width: 240px;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .project-card p {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #444;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .project-card {
+      flex: 1 1 calc(50% - 1rem); /* Половина ширины для планшетов */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-card {
+      flex: 1 1 100%; /* Полная ширина для телефонов */
+    }
+  }
+  
+
+
+/* Увлечения */
+.hobbies-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.hobby-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hobby-card i {
+    font-size: 32px;
+    color: #007BFF;
+}
+
+.hobby-card h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.hobby-card p {
+    font-size: 14px;
+}
+
+
+
+/* Цели */
+.goals-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.goal-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.goal-item h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #007BFF;
+}
+
+.goal-item p {
+    margin: 10px 0;
+    font-size: 14px;
 }

@@ -1,6 +1,6 @@
 import './BlogPages.css'
 import BlogCards from 'components/BlogCards/BlogCards';
-
+import blogImage from 'assets/images/blog.png'
 
 
 function BlogPages() {
@@ -22,7 +22,7 @@ function BlogPages() {
                     </div>
 
                     <div className="greeting">
-                        <img src="/src/assets/images/blog.png" alt="фото блога" className="blog-img" />
+                        <img src={blogImage} alt="фото блога" className="greeting-img" />
                     </div>
                 </div>
 

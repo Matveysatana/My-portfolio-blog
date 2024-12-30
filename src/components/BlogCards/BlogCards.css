@@ -52,61 +52,62 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    padding: 0;
+    padding: 0 10px; /* Добавлено для визуального отступа по бокам */
     box-sizing: border-box;
-  }
-  
-  /* Стили для каждой карточки */
-  .card {
+}
+
+/* Стили для каждой карточки */
+.card {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s, box-shadow 0.3s;
-    height: 380px; /* Устанавливаем высоту карточек одинаковой */
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Убираем фиксированную высоту */
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02); /* Более заметная анимация */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
     width: 100%;
-    height: 200px;
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    aspect-ratio: 16 / 9; /* Задаем соотношение сторон для изображений */
     object-fit: cover;
-  }
-  
-  .card-content {
+}
+
+.card-content {
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-  }
-  
-  .card-content h3 {
+    flex-grow: 1; /* Растягиваем содержимое для равномерного заполнения */
+}
+
+.card-content h3 {
     font-size: 20px;
     color: #007bff;
     font-weight: bold;
-    text-align: left;
-  }
-  
-  .card-content p {
     margin-bottom: 10px;
+}
+
+.card-content p {
+    margin-bottom: 15px;
     color: #6c757d;
-    text-align: left;
-  }
-  
-  .card-date {
+    line-height: 1.6; /* Улучшаем читаемость текста */
+}
+
+.card-date {
     font-size: 12px;
     color: #adb5bd;
-    text-align: left;
-  }
-  
-  .card-button {
+    margin-top: auto; /* Прижимаем дату к нижней части */
+}
+
+.card-button {
     padding: 12px 20px;
     background-color: #3a86ff;
     color: #fff;
@@ -114,20 +115,33 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    align-self: flex-start; /* Кнопка выравнивается по левому краю */
-  }
-  
-  .card-button:hover {
+    margin-top: 10px; /* Добавляем отступ сверху */
+    align-self: flex-start;
+}
+
+.card-button:hover {
     background-color: #2c6cc7;
-    transform: scale(1.05);
-  }
-  
-  .no-results {
+    transform: scale(1.08);
+}
+
+.no-results {
     text-align: center;
     font-size: 18px;
     color: #555;
     margin-top: 20px;
-  }
+    animation: fadeIn 0.5s ease-in-out; /* Добавляем анимацию */
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 a {
   text-decoration: none;

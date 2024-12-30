@@ -9,7 +9,6 @@ import NotFoundPages from './pages/NotFoundPage/NotFoundPages';
 import BlogDetails from 'pages/BlogDetailsPage/BlogDetailsPage';
 
 
-const greeting = "Привет Матвей! это твой сайт"
 
 function App() {
   return (
@@ -19,7 +18,7 @@ function App() {
           <Route index element={<HomePage />}></Route>
           <Route path={'blog'} element={<BlogPages />} ></Route>
           <Route path="blog/:id" element={<BlogDetails />} />
-          <Route path={'about'} element={<AboutPages greet={greeting} />}  ></Route>
+          <Route path={'about'} element={<AboutPages/>}  ></Route>
           <Route path={'contacts'} element={<ContactPage />}  ></Route>
           <Route path={'*'} element={<NotFoundPages />}  ></Route>
         </Route>

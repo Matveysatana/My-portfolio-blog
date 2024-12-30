@@ -36,10 +36,10 @@
 
 /* Контейнер статьи */
 .blog-details-container {
-  max-width: 900px; /* Увеличенная ширина */
+  max-width: 1000px; 
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.9); /* Прозрачный белый фон */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Глубокая тень */
+  background: rgba(255, 255, 255, 0.9);  
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
   border-radius: 15px;
   overflow: hidden;
   padding: 30px;
@@ -47,7 +47,6 @@
   animation: fadeIn 0.5s ease-out;
 }
 
-/* Анимация появления */
 @keyframes fadeIn {
   from {
       opacity: 0;
@@ -63,12 +62,13 @@
 .blog-details-image {
   width: 100%;
   height: auto;
+  max-height: 400px;
+  object-fit: cover;
   border-radius: 15px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Тень для изображения */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 }
 
-/* Заголовок и мета-информация */
 .blog-details-header {
   margin-bottom: 20px;
   text-align: left;

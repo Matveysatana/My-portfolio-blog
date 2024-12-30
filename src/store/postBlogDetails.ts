@@ -1,9 +1,40 @@
 import { PostsDetailsType } from 'types/postBlogDetails-type';
+import start_prog from 'assets/images/post-images/start_prog.jpeg'
+import framework_prog from 'assets/images/post-images/framework_prog.jpeg'
+import ts_or_js_prog from 'assets/images/post-images/ts_or_js_prog.jpeg'
+import tools_music from 'assets/images/post-images/tools_music.jpeg'
+import guitar_music from 'assets/images/post-images/guitar_music.jpeg'
+import electro_music from 'assets/images/post-images/electro_music.png'
+import morningRun_sport from 'assets/images/post-images/morningRun_sport.png'
+import zal_sport from 'assets/images/post-images/zal_sport.png'
+import footBascet_sport from 'assets/images/post-images/footBascet_sport.jpeg'
+import start_buisnes from 'assets/images/post-images/start_buisnes.png'
+import errors_buisnes from 'assets/images/post-images/errors_buisnes.png'
+import books_buisnes from 'assets/images/post-images/books_buisnes.png'
+import top5_books from 'assets/images/post-images/top5_books.png'
+import fastread_books from 'assets/images/post-images/fastread_books.png'
+import best_books from 'assets/images/post-images/best_books.png'
+import sovet_english from 'assets/images/post-images/sovet_english.png'
+import app_english from 'assets/images/post-images/app_english.png'
+import films_english from 'assets/images/post-images/films_english.png'
+import start_invest from 'assets/images/post-images/start_invest.png'
+import errors_invest from 'assets/images/post-images/errors_invest.png'
+import portfol_invest from 'assets/images/post-images/portfol_invest.png'
+import base_drow from 'assets/images/post-images/base_drow.png'
+import tools_drow from 'assets/images/post-images/tools_drow.png'
+import painting_drow from 'assets/images/post-images/painting_drow.png'
+import rules_voley from 'assets/images/post-images/rules_voley.png'
+import train_voley from 'assets/images/post-images/train_voley.png'
+import history_voley from 'assets/images/post-images/history_voley.png'
+import sovet_edu from 'assets/images/post-images/sovet_edu.png'
+import bestWebsite_edu from 'assets/images/post-images/bestWebsite_edu.png'
+import plan_edu from 'assets/images/post-images/plan_edu.png'
 
-export const blogDetailsPost:PostsDetailsType[] = [
+
+export const blogDetailsPost: PostsDetailsType[] = [
   {
     id: "1",
-    src: "assets/images/post-images/details/start_prog.jpeg",
+    src: start_prog,
     subtitle: "Как начать изучать программирование",
     readingTime: "10 минут",
     tags: ["программирование", "новичок"],
@@ -52,7 +83,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "2",
-    src: "assets/images/post-images/details/framework_prog.jpeg",
+    src: framework_prog,
     subtitle: "Лучшие фреймворки для разработки в 2024 году",
     readingTime: "12 минут",
     tags: ["фреймворки", "React", "Angular", "Vue"],
@@ -101,7 +132,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "3",
-    src: "assets/images/post-images/details/ts_or_js_prog.jpeg",
+    src: ts_or_js_prog,
     subtitle: "Что выбрать: TypeScript или JavaScript?",
     readingTime: "8 минут",
     tags: ["TypeScript", "JavaScript", "сравнение"],
@@ -142,7 +173,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "4",
-    src: "assets/images/post-images/details/tools_music.jpeg",
+    src: tools_music,
     subtitle: "10 лучших инструментов для начинающих музыкантов",
     readingTime: "7 минут",
     tags: ["музыка", "инструменты", "новичок"],
@@ -183,7 +214,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "5",
-    src: "assets/images/post-images/details/guitar_music.jpeg",
+    src: guitar_music,
     subtitle: "Как научиться играть на гитаре за месяц",
     readingTime: "6 минут",
     tags: ["гитара", "музыка", "обучение"],
@@ -224,7 +255,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "6",
-    src: "assets/images/post-images/details/electro_music.png",
+    src: electro_music,
     subtitle: "Лучшие программы для создания электронной музыки",
     readingTime: "9 минут",
     tags: ["электронная музыка", "программы", "сравнение"],
@@ -265,7 +296,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "7",
-    src: "assets/images/post-images/details/morningRun_sport.png",
+    src: morningRun_sport,
     subtitle: "Польза утренних пробежек",
     readingTime: "5 минут",
     tags: ["бег", "спорт", "здоровье"],
@@ -306,7 +337,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "8",
-    src: "assets/images/post-images/details/zal_sport.png",
+    src: zal_sport,
     subtitle: "Лучшие упражнения для новичков в тренажерном зале",
     readingTime: "6 минут",
     tags: ["тренажерный зал", "спорт", "упражнения"],
@@ -347,7 +378,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "9",
-    src: "assets/images/post-images/details/footBascet_sport.jpeg",
+    src: footBascet_sport,
     subtitle: "Что лучше: футбол или баскетбол?",
     readingTime: "7 минут",
     tags: ["футбол", "баскетбол", "сравнение"],
@@ -388,7 +419,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "10",
-    src: "assets/images/post-images/details/start_buisnes.png",
+    src: start_buisnes,
     subtitle: "Как начать свой бизнес с нуля",
     readingTime: "8 минут",
     tags: ["бизнес", "стартап", "предпринимательство"],
@@ -428,7 +459,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
     ]
   }, {
     id: "11",
-    src: "assets/images/post-images/details/errors_buisnes.png",
+    src: errors_buisnes,
     subtitle: "10 ошибок, которых следует избегать в бизнесе",
     readingTime: "10 минут",
     tags: ["бизнес", "ошибки", "советы"],
@@ -469,7 +500,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "12",
-    src: "assets/images/post-images/details/books_buisnes.png",
+    src: books_buisnes,
     subtitle: "Книги, которые должен прочитать каждый предприниматель",
     readingTime: "9 минут",
     tags: ["бизнес", "книги", "саморазвитие"],
@@ -510,7 +541,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "13",
-    src: "assets/images/post-images/details/top5_books.png",
+    src: top5_books,
     subtitle: "Топ-5 книг, которые стоит прочитать каждому",
     readingTime: "8 минут",
     tags: ["книги", "литература", "топ"],
@@ -551,7 +582,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "14",
-    src: "assets/images/post-images/details/fastread_books.png",
+    src: fastread_books,
     subtitle: "Как читать быстрее и эффективнее",
     readingTime: "7 минут",
     tags: ["книги", "скорочтение", "обучение"],
@@ -592,7 +623,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "15",
-    src: "assets/images/post-images/details/best_books.png",
+    src: best_books,
     subtitle: "Лучшие книги по саморазвитию",
     readingTime: "9 минут",
     tags: ["книги", "саморазвитие", "топ"],
@@ -633,7 +664,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "16",
-    src: "assets/images/post-images/details/sovet_english.png",
+    src: sovet_english,
     subtitle: "5 советов для изучения английского языка",
     readingTime: "6 минут",
     tags: ["английский", "обучение", "советы"],
@@ -674,7 +705,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "17",
-    src: "assets/images/post-images/details/app_english.png",
+    src: app_english,
     subtitle: "Лучшие приложения для изучения английского",
     readingTime: "7 минут",
     tags: ["английский", "приложения", "обучение"],
@@ -715,7 +746,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "18",
-    src: "assets/images/post-images/details/films_english.png",
+    src: films_english,
     subtitle: "Топ-10 фильмов для изучения английского",
     readingTime: "8 минут",
     tags: ["английский", "фильмы", "обучение"],
@@ -756,7 +787,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "19",
-    src: "assets/images/post-images/details/start_invest.png",
+    src: start_invest,
     subtitle: "С чего начать инвестировать",
     readingTime: "9 минут",
     tags: ["инвестиции", "финансы", "новичок"],
@@ -797,7 +828,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "20",
-    src: "assets/images/post-images/details/errors_invest.png",
+    src: errors_invest,
     subtitle: "Топ-5 ошибок начинающих инвесторов",
     readingTime: "8 минут",
     tags: ["инвестиции", "ошибки", "советы"],
@@ -835,9 +866,9 @@ export const blogDetailsPost:PostsDetailsType[] = [
         text: "Каждое инвестирование связано с рисками. Убедитесь, что вы понимаете риски, связанные с вашими инвестициями, и готовы к ним."
       }
     ]
-  },{
+  }, {
     id: "21",
-    src: "assets/images/post-images/details/portfol_invest.png",
+    src: portfol_invest,
     subtitle: "Как создать диверсифицированный портфель",
     readingTime: "9 минут",
     tags: ["инвестиции", "портфель", "финансы"],
@@ -878,7 +909,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "22",
-    src: "assets/images/post-images/details/base_drow.png",
+    src: base_drow,
     subtitle: "Основы рисунка для начинающих",
     readingTime: "7 минут",
     tags: ["рисование", "искусство", "новичок"],
@@ -919,7 +950,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "23",
-    src: "assets/images/post-images/details/tools_drow.png",
+    src: tools_drow,
     subtitle: "Как выбрать идеальный набор для рисования",
     readingTime: "8 минут",
     tags: ["рисование", "инструменты", "советы"],
@@ -960,7 +991,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "24",
-    src: "assets/images/post-images/details/painting_drow.png",
+    src: painting_drow,
     subtitle: "10 идей для рисунков акварелью",
     readingTime: "6 минут",
     tags: ["рисование", "акварель", "идеи"],
@@ -1001,7 +1032,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "25",
-    src: "assets/images/post-images/details/rules_voley.png",
+    src: rules_voley,
     subtitle: "Основные правила волейбола для начинающих",
     readingTime: "7 минут",
     tags: ["волейбол", "спорт", "правила"],
@@ -1042,7 +1073,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "26",
-    src: "assets/images/post-images/details/train_voley.png",
+    src: train_voley,
     subtitle: "Лучшие упражнения для улучшения игры в волейбол",
     readingTime: "8 минут",
     tags: ["волейбол", "тренировки", "спорт"],
@@ -1083,7 +1114,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "27",
-    src: "assets/images/post-images/details/history_voley.png",
+    src: history_voley,
     subtitle: "История волейбола: как всё начиналось",
     readingTime: "6 минут",
     tags: ["волейбол", "история", "спорт"],
@@ -1124,7 +1155,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "28",
-    src: "assets/images/post-images/details/sovet_edu.png",
+    src: sovet_edu,
     subtitle: "Как эффективно учиться: 7 простых советов",
     readingTime: "7 минут",
     tags: ["обучение", "советы", "продуктивность"],
@@ -1165,7 +1196,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "29",
-    src: "assets/images/post-images/details/bestWebsite_edu.png",
+    src: bestWebsite_edu,
     subtitle: "Лучшие онлайн-платформы для самообразования",
     readingTime: "8 минут",
     tags: ["обучение", "онлайн-курсы", "платформы"],
@@ -1206,7 +1237,7 @@ export const blogDetailsPost:PostsDetailsType[] = [
   },
   {
     id: "30",
-    src: "assets/images/post-images/details/plan_edu.png",
+    src: plan_edu,
     subtitle: "Как составить идеальный план обучения",
     readingTime: "9 минут",
     tags: ["обучение", "планирование", "советы"],

@@ -19,7 +19,7 @@ const BlogDetails = () => {
     return (
         <div className="blog-details-page">
             <button className="sticky-back-button" onClick={() => navigate("/blog")}>
-                &#8592; Назад к блогу
+            &#8592; Назад  
             </button>
 
             <div className="blog-details-container">

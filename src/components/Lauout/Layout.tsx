@@ -41,7 +41,7 @@ const Layout = () => {
         </nav>
       </header>
 
-      <section className="">
+      <section className="main">
         <Outlet />
       </section>
 
