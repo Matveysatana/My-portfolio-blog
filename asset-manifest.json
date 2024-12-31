@@ -1,21 +1,29 @@
 {
   "files": {
-    "main.css": "/My-portfolio-blog/static/css/main.9616851f.css",
-    "main.js": "/My-portfolio-blog/static/js/main.af2c81af.js",
+    "main.css": "/My-portfolio-blog/static/css/main.4bc7c065.css",
+    "main.js": "/My-portfolio-blog/static/js/main.1f9505e8.js",
+    "static/media/cherst.goal.png": "/My-portfolio-blog/static/media/cherst.goal.1c261a15212d34b67342.png",
+    "static/media/travel.goal.png": "/My-portfolio-blog/static/media/travel.goal.d0ad867538ef29c318d3.png",
+    "static/media/education.goal.png": "/My-portfolio-blog/static/media/education.goal.ec197bb573661c056f41.png",
     "static/media/tools_drow.png": "/My-portfolio-blog/static/media/tools_drow.60a22639f7dfdf81ece4.png",
     "static/media/top5_books.png": "/My-portfolio-blog/static/media/top5_books.de336b9c6f577b9cc306.png",
     "static/media/sovet_english.png": "/My-portfolio-blog/static/media/sovet_english.d4730f5b89bf7b8dc08f.png",
+    "static/media/voleyball.hobby.png": "/My-portfolio-blog/static/media/voleyball.hobby.3ae81136a720a83cdfbd.png",
     "static/media/train_voley.png": "/My-portfolio-blog/static/media/train_voley.3ed150ef63d484751a79.png",
     "static/media/zal_sport.png": "/My-portfolio-blog/static/media/zal_sport.d76c9a735f9d60dd03e8.png",
+    "static/media/senior.goal.png": "/My-portfolio-blog/static/media/senior.goal.0fd6a539f0e456f6022a.png",
+    "static/media/inest.hobby.png": "/My-portfolio-blog/static/media/inest.hobby.f31a3b873bf1afa5d898.png",
+    "static/media/prog.hobby.png": "/My-portfolio-blog/static/media/prog.hobby.5b34da507fc95f181857.png",
+    "static/media/personApp.goal.png": "/My-portfolio-blog/static/media/personApp.goal.6e2dc1fea0093464c0aa.png",
     "static/media/blog.png": "/My-portfolio-blog/static/media/blog.846d0ae2a93567767c18.png",
     "static/media/start_invest.png": "/My-portfolio-blog/static/media/start_invest.88f90de951c39b238ff0.png",
     "static/media/start_buisnes.png": "/My-portfolio-blog/static/media/start_buisnes.00ba6d80c444f10cc37a.png",
+    "static/media/health.goal.png": "/My-portfolio-blog/static/media/health.goal.08f3b78092da4f943348.png",
     "static/media/project_2.png": "/My-portfolio-blog/static/media/project_2.8c5a97a37b4a72d9da83.png",
     "static/media/project_3.png": "/My-portfolio-blog/static/media/project_3.843f2b82d7e741e1e610.png",
     "static/media/morningRun_sport.png": "/My-portfolio-blog/static/media/morningRun_sport.251fe1f68bcae6801ba2.png",
     "static/media/history_voley.png": "/My-portfolio-blog/static/media/history_voley.3621fc234f3c3565e37c.png",
     "static/media/best_books.png": "/My-portfolio-blog/static/media/best_books.37a0587e79705a522c6a.png",
-    "static/media/project_4.png": "/My-portfolio-blog/static/media/project_4.59c14b5f658095e6ba9b.png",
     "static/media/painting_drow.png": "/My-portfolio-blog/static/media/painting_drow.3c81730734a8754522b5.png",
     "static/media/errors_buisnes.png": "/My-portfolio-blog/static/media/errors_buisnes.cbae5a6f6e6895c193cf.png",
     "static/media/fastread_books.png": "/My-portfolio-blog/static/media/fastread_books.7562a5970dd6eecbdcfd.png",
@@ -26,6 +34,7 @@
     "static/media/sovet_edu.png": "/My-portfolio-blog/static/media/sovet_edu.b7f531a315026f2ec0b4.png",
     "static/media/portfol_invest.png": "/My-portfolio-blog/static/media/portfol_invest.b313c94887ecda9e2faf.png",
     "static/media/films_english.png": "/My-portfolio-blog/static/media/films_english.2207b2c487cf1ac26e40.png",
+    "static/media/project_4.png": "/My-portfolio-blog/static/media/project_4.ce6a195ed4e4fe278048.png",
     "static/media/errors_invest.png": "/My-portfolio-blog/static/media/errors_invest.0c89dc0e5a0bf75e38db.png",
     "static/media/app_english.png": "/My-portfolio-blog/static/media/app_english.c78655e86d8fce118e05.png",
     "static/media/bestWebsite_edu.png": "/My-portfolio-blog/static/media/bestWebsite_edu.831f3e6203a20183759a.png",
@@ -40,11 +49,11 @@
     "static/media/framework_prog.jpeg": "/My-portfolio-blog/static/media/framework_prog.7ab7fc98c6be693eb3bd.jpeg",
     "static/media/Termina-Medium.otf": "/My-portfolio-blog/static/media/Termina-Medium.9c4a6b594815816d6be6.otf",
     "index.html": "/My-portfolio-blog/index.html",
-    "main.9616851f.css.map": "/My-portfolio-blog/static/css/main.9616851f.css.map",
-    "main.af2c81af.js.map": "/My-portfolio-blog/static/js/main.af2c81af.js.map"
+    "main.4bc7c065.css.map": "/My-portfolio-blog/static/css/main.4bc7c065.css.map",
+    "main.1f9505e8.js.map": "/My-portfolio-blog/static/js/main.1f9505e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.9616851f.css",
-    "static/js/main.af2c81af.js"
+    "static/css/main.4bc7c065.css",
+    "static/js/main.1f9505e8.js"
   ]
 }
