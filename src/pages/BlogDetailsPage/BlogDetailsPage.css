@@ -139,18 +139,34 @@
   box-shadow: 0 4px 8px rgba(0, 123, 255, 0.5); /* Увеличенная тень при наведении */
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
+  /* Контейнер статьи: сделать шире */
   .blog-details-container {
-      padding: 20px;
+    max-width: 100%; /* Занимает всю ширину экрана */
+    padding: 20px; /* Уменьшение отступов */
   }
 
-  .blog-details-title {
-      font-size: 24px;
+  /* Кнопка "Назад": сделать меньше */
+  .sticky-back-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 15px; /* Меньше радиус */
+    box-shadow: 0 3px 6px rgba(0, 123, 255, 0.3); /* Уменьшенная тень */
+  }
+}
+
+/* Для совсем маленьких экранов */
+@media (max-width: 480px) {
+  /* Контейнер статьи: ещё немного шире */
+  .blog-details-container {
+    padding: 15px;
   }
 
-  .blog-details-content p,
-  .blog-details-content h2 {
-      font-size: 14px;
+  /* Кнопка "Назад": ещё меньше */
+  .sticky-back-button {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2); /* Ещё меньшая тень */
   }
 }

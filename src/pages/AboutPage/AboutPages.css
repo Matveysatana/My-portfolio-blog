@@ -1,25 +1,30 @@
 
+
 .about-menu {
-    font-size: 18px;
+  display: flex;
+  flex-wrap: wrap; /* Переносим элементы при нехватке места */
+  justify-content: center; /* Центрируем ссылки */
+  gap: 15px; /* Пространство между ссылками */
+  font-size: 18px; /* Размер текста по умолчанию */
 }
 
 .about-menu-link {
-    text-decoration: none;
-    color: #333; 
-    padding: 10px 15px;
-    border-radius: 25px; 
-    transition: all 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
 }
 
 .about-menu-link:hover {
-    color: #fff; 
-    background-color: #5DADE2; 
-    transform: scale(1.1); 
-    box-shadow: 0 4px 6px rgba(93, 173, 226, 0.5); 
-} 
-
+  color: #fff;
+  background-color: #5DADE2; 
+  transform: scale(1.1); 
+  box-shadow: 0 4px 6px rgba(93, 173, 226, 0.5); 
+}
 section {
-    margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .section-title {
@@ -43,47 +48,49 @@ section {
 
 /* Обо мне */
 .about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Добавлено для переноса на маленьких экранах */
 }
 
 .about-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #007BFF;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007BFF;
 }
 
 .about-text {
-    max-width: 600px;
-    text-align: left;
+  max-width: 600px;
+  text-align: left;
+  flex: 1;
 }
 
 .about-facts {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
 }
 
 .about-facts li {
-    margin: 10px 0;
-    font-size: 16px;
+  margin: 10px 0;
+  font-size: 16px;
 }
 
 /* Образование и достижения */
-/* Общие стили для линии времени */
+
 .education-timeline {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     margin-top: 2rem;
-  }
+}
   
-  .timeline-step {
+.timeline-step {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -93,27 +100,26 @@ section {
     border-radius: 8px;
     position: relative;
     transition: background 0.3s ease, box-shadow 0.3s ease;
-  }
+}
   
-  .timeline-step:hover {
+.timeline-step:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  .timeline-heading {
+.timeline-heading {
     font-size: 1.3rem;
     font-weight: bold;
     color: #0078d7;
     margin-bottom: 0.5rem;
-  }
+}
   
-  .timeline-step p {
+.timeline-step p {
     font-size: 1rem;
     color: #444;
     line-height: 1.6;
-  }
-  
-  /* Эффект точки на линии */
-  .timeline-step::before {
+}
+
+.timeline-step::before {
     content: "";
     position: absolute;
     left: -10px;
@@ -123,132 +129,212 @@ section {
     background: #0078d7;
     border-radius: 50%;
     box-shadow: 0 0 4px rgba(0, 120, 215, 0.6);
-  }
+}
   
-/* Общие стили для секции достижений */
 .achievements-section {
     margin: 3rem 0;
     text-align: center;
-  }
+}
   
-  .achievements-heading {
+.achievements-heading {
     font-size: 1.8rem;
     color: #0078d7;
     margin-bottom: 2rem;
-  }
+}
   
-  /* Контейнер для карточек */
-  .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-  }
-  
-  /* Стили для каждой карточки */
-  .project-card {
-    flex: 1 1 calc(25% - 1rem); /* Адаптивная ширина */
-    max-width: 240px;
-    text-decoration: none;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  }
-  
-  .project-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-  }
-  
-  .project-card p {
-    padding: 1rem;
-    font-size: 1rem;
-    color: #444;
-    text-align: center;
-    line-height: 1.4;
-  }
-  
-  /* Адаптивность */
-  @media (max-width: 768px) {
-    .project-card {
-      flex: 1 1 calc(50% - 1rem); /* Половина ширины для планшетов */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .project-card {
-      flex: 1 1 100%; /* Полная ширина для телефонов */
-    }
-  }
-  
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem; /* Добавляем отступы по краям */
+  max-width: 1200px; /* Ограничиваем максимальную ширину контейнера */
+  margin: 0 auto; /* Центрируем контейнер */
+}
+
+.project-card {
+  flex: 1 1 calc(25% - 1.5rem); /* 4 карточки в строке на десктопах */
+  max-width: 240px;
+  min-width: 200px; /* Минимальная ширина карточки */
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.project-card p {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+  line-height: 1.4;
+}
 
 
 /* Увлечения */
 .hobbies-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hobby-card {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  max-width: 300px;
+  margin: 20px auto;
+  cursor: pointer;
 }
 
-.hobby-card i {
-    font-size: 32px;
-    color: #007BFF;
+.hobby-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.hobby-card h4 {
-    margin: 10px 0;
-    font-size: 18px;
+.hobby-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-.hobby-card p {
-    font-size: 14px;
+.hobby-title {
+  font-size: 20px;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hobby-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.more-button-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.more-text {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.more-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.more-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
+  transform: translateY(-3px);
 }
 
 
 
-/* Цели */
+
+
+
+
+
+/* Основные стили */
 .goals-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .goal-item {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.goal-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.goal-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
 }
 
 .goal-item h4 {
-    margin: 0;
-    font-size: 18px;
-    color: #007BFF;
+  font-size: 1.5rem;
+  color: #007bff; 
+
+  margin-bottom: 10px;
 }
 
 .goal-item p {
-    margin: 10px 0;
-    font-size: 14px;
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+.goal-item .text-content {
+  max-width: calc(100% - 170px);
+}
+
+
+/* Темная тема (например, для переключения темы) */
+body.dark-mode .goals-list {
+  background-color: #2e2e2e;
+}
+
+body.dark-mode .goal-item {
+  background-color: #3a3a3a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .goal-item h4 {
+  color: #9be7ff;
+}
+
+body.dark-mode .goal-item p {
+  color: #dddddd;
 }

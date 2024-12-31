@@ -1,4 +1,5 @@
 import './app.css';
+import './appMedia.css'
 import { Routes, Route } from "react-router-dom";
 import Layout from './components/Lauout/Layout';
 import AboutPages from './pages/AboutPage/AboutPages';
