@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import myPhoto from 'assets/images/momentDevelop.jpg'
 import './HomePage.css'
 
 
@@ -21,7 +22,7 @@ function HomePage() {
         </div>
 
         <div className="greeting">
-          <img className="greeting-img" src="" alt="Фото Автора" />
+          <img className="greeting-img" src={myPhoto} alt="Фото Автора" />
         </div>
       </div>
       

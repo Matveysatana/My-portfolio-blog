@@ -34,46 +34,70 @@ const Layout = () => {
   return (
     <>
 
-<header className={`header ${isScrolled ? "scrolled" : ""}`}>
-      <div className="header-container">
-        <div className="logo">
-          <Link to="/">
-            <img src={LogoIcn} alt="logo" className="logo-image" />
-          </Link>
-        </div>
-
-        <button
-          className="menu-toggle"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          ☰
-        </button>
-
-        <nav className={`navigate ${isMenuOpen ? "open" : ""}`}>
-          <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
-            Home
-          </NavLink>
-          <NavLink to="/about" onClick={() => setIsMenuOpen(false)}>
-            About Me
-          </NavLink>
-          <NavLink to="/blog" onClick={() => setIsMenuOpen(false)}>
-            Blog
-          </NavLink>
-          <NavLink to="/contacts" onClick={() => setIsMenuOpen(false)}>
-            Contacts
-          </NavLink>
+      <header className={`header ${isScrolled ? "scrolled" : ""}`}>
+        <div className="header-container">
+          <div className="logo">
+            <Link to="/">
+              <img src={LogoIcn} alt="logo" className="logo-image" />
+            </Link>
+          </div>
 
           <button
-            className="theme-toggle"
-            onClick={() => setIsDarkMode(!isDarkMode)}
-            aria-label="Toggle theme"
+            className="menu-toggle"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
-            {isDarkMode ? "🌞 Light Mode" : "🌙 Dark Mode"}
+            ☰
           </button>
-        </nav>
-      </div>
-    </header>
+
+          <nav className={`navigate ${isMenuOpen ? "open" : ""}`}>
+            <NavLink
+              to="/"
+              onClick={() => {
+                setIsMenuOpen(false);
+                window.scrollTo(0, 0);
+              }}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/about"
+              onClick={() => {
+                setIsMenuOpen(false);
+                window.scrollTo(0, 0);
+              }}
+            >
+              About Me
+            </NavLink>
+            <NavLink
+              to="/blog"
+              onClick={() => {
+                setIsMenuOpen(false);
+                window.scrollTo(0, 0);
+              }}
+            >
+              Blog
+            </NavLink>
+            <NavLink
+              to="/contacts"
+              onClick={() => {
+                setIsMenuOpen(false);
+                window.scrollTo(0, 0);
+              }}
+            >
+              Contacts
+            </NavLink>
+
+            <button
+              className="theme-toggle"
+              onClick={() => setIsDarkMode(!isDarkMode)}
+              aria-label="Toggle theme"
+            >
+              {isDarkMode ? "🌞 Light Mode" : "🌙 Dark Mode"}
+            </button>
+          </nav>
+        </div>
+      </header>
 
 
       <section className="main">
@@ -88,10 +112,38 @@ const Layout = () => {
           </div>
 
           <nav className="navigate">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About Me</NavLink>
-            <NavLink to="/blog">Blog</NavLink>
-            <NavLink to="/contacts">Contacts</NavLink>
+            <NavLink
+              to="/"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/about"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              About Me
+            </NavLink>
+            <NavLink
+              to="/blog"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              Blog
+            </NavLink>
+            <NavLink
+              to="/contacts"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              Contacts
+            </NavLink>
           </nav>
 
           <div className="footer-social">

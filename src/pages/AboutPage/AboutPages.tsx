@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import './AboutPages.css'
 import myPhoto from "assets/images/me.jpg"
+import aboutMe from "assets/images/aboutMe.jpg"
 import SkillsCards from "components/SkillsCards/SkillsCards";
 import project_1 from "assets/images/my-projects/project_1.png";
 import project_2 from "assets/images/my-projects/project_2.png";
@@ -25,16 +26,13 @@ import { Link, useNavigate } from "react-router-dom";
 
 function AboutPages() {
 
-
-    const navigate = useNavigate();
-    // Создаем ref для каждой секции
     const sectionAboutMe = useRef(null);
     const sectionSkills = useRef(null);
     const sectionAchivements = useRef(null);
     const sectionHobbies = useRef(null);
     const sectionTarget = useRef(null);
 
-    // Функция для плавного скролла до секции
+
     const scrollToSection = (ref: any) => {
         if (ref.current) {
             ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -67,7 +65,7 @@ function AboutPages() {
                     </div>
 
                     <div className="greeting">
-                        <img src="assets/images/me.jpg" alt="фото автора" className="about-img" />
+                        <img src={aboutMe} alt="фото автора" className="greeting-img" />
                     </div>
                 </div>
             </div>
@@ -147,7 +145,7 @@ function AboutPages() {
                     <div className="projects-container">
                         <a href="https://matveysatana.github.io/My-portfolio-blog/" target="_blank"
                             rel="noopener noreferrer" className="project-card">
-                            <img src="/src/assets/images/my-projects/project_1" alt="Личный блог на React" />
+                            <img src={project_1} alt="Личный блог на React" />
                             <p>Личный блог на React — мой первый серьёзный проект с использованием современных технологий.</p>
                         </a>
                         <a href="https://matveysatana.github.io/portfolio/" target="_blank"

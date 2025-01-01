@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Termina', 'Arial', sans-serif;
+    font-family: 'Termina', 'Montserrat', sans-serif;
     scroll-behavior: smooth;
     transition: background-color 0.3s ease, color 0.3s ease;  
 }
@@ -9,7 +9,10 @@
 @font-face {
     font-family: 'Termina';
     src: url('./assets/fonts/Termina-Medium.otf') format('truetype');
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-MediumItalic.ttf') format('truetype');
   }
+
 /* основные стили для блоков */
 .center{
     display: flex;
@@ -104,7 +107,7 @@
 /* Адаптивность для мобильных устройств */
 @media (max-width: 480px) {
     .backgraund {
-        height: 100px; /* Еще меньше высота */
+        height: 150px; /* Еще меньше высота */
         margin-bottom: 30px; /* Еще меньше отступ */
     }
 }
