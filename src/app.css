@@ -5,7 +5,9 @@
     scroll-behavior: smooth;
     transition: background-color 0.3s ease, color 0.3s ease;  
 }
-
+p {
+    color:#555;
+}
 @font-face {
     font-family: 'Termina';
     src: url('./assets/fonts/Termina-Medium.otf') format('truetype');
@@ -96,21 +98,9 @@
 }
 
 
-/* Адаптивность для планшетов */
-@media (max-width: 768px) {
-    .backgraund {
-        height: 120px; /* Уменьшаем высоту */
-        margin-bottom: 40px; /* Уменьшаем отступ */
-    }
-}
 
-/* Адаптивность для мобильных устройств */
-@media (max-width: 480px) {
-    .backgraund {
-        height: 150px; /* Еще меньше высота */
-        margin-bottom: 30px; /* Еще меньше отступ */
-    }
-}
+
+
 
 /* Основной контейнер */
 .greeting-page {
@@ -140,7 +130,8 @@
 .greeting-description {
     font-size: 18px;
     margin: 25px 0;
-    line-height: 1.6; /* Улучшаем читаемость */
+    line-height: 1.6;
+
 }
 
 /* Кнопка */

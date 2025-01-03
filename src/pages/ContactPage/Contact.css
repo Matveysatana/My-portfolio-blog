@@ -1,0 +1,191 @@
+/* Общий контейнер */
+.contact-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Верхняя секция: текст + фото */
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Фото */
+.image-container {
+    flex: 1;
+    text-align: center;
+    animation: scaleIn 1s ease-in-out;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%; /* Круглая форма */
+    border: 3px solid #007bff; /* Тонкая обводка */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Анимация при наведении */
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовок формы */
+.form-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #007bff;
+    margin: 30px 0 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Форма */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column; /* Элементы в колонку */
+    gap: 10px;
+    align-items: flex-start;
+}
+.form-field-wrraper {
+    display: flex;
+    gap: 10px;
+
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.form-label {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.form-textarea {
+    resize: none;
+    height: 120px;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Социальные ссылки */
+.social-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-link:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

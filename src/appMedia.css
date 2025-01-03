@@ -67,7 +67,17 @@
         padding: 10px 20px;
         font-size: 14px;
     }
-    
+    .backgraund {
+        height: 120px; /* Уменьшаем высоту */
+        margin-bottom: 40px; /* Уменьшаем отступ */
+    }
+    .header-section {
+        flex-direction: column;
+    }
+
+    .form-input, .submit-button, .form-textarea {
+        width: 90%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -115,5 +125,24 @@
         padding: 8px 16px;
         font-size: 12px;
     }
-    
+    .backgraund {
+        height: 150px; /* Еще меньше высота */
+        margin-bottom: 30px; /* Еще меньше отступ */
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 250px;
+    }
 }
