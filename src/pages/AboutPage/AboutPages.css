@@ -282,10 +282,10 @@ section {
 
 .goal-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
+  border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -296,8 +296,8 @@ section {
 }
 
 .goal-item img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 10px;
   margin-right: 20px;
@@ -378,20 +378,3 @@ section {
 
 
 
-/* Темная тема (например, для переключения темы) */
-body.dark-mode .goals-list {
-  background-color: #2e2e2e;
-}
-
-body.dark-mode .goal-item {
-  background-color: #3a3a3a;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-body.dark-mode .goal-item h4 {
-  color: #9be7ff;
-}
-
-body.dark-mode .goal-item p {
-  color: #dddddd;
-}

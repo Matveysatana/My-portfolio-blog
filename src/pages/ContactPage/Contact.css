@@ -107,6 +107,7 @@
     font-size: 1.2rem;
     transition: border-color 0.3s, box-shadow 0.3s;
     box-sizing: border-box;
+    background-color: #fff;
 }
 
 .form-input:focus, .form-textarea:focus {
@@ -117,7 +118,7 @@
 
 .form-textarea {
     resize: none;
-    height: 120px;
+    height: auto;
 }
 
 .submit-button {

@@ -1,0 +1,41 @@
+
+
+
+.footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0 0 0;
+    background-color: #F3F3F3;
+
+}
+
+.footer-navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+
+
+.socail-link {
+
+    & img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.copyrarte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #8695A4;
+    background-color: #454545;
+    height: 80px;
+}
