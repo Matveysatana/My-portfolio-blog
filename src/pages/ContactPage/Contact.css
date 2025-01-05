@@ -119,6 +119,7 @@
 .form-textarea {
     resize: none;
     height: auto;
+    color: #000;
 }
 
 .submit-button {

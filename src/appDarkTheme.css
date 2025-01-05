@@ -601,10 +601,7 @@
 
 .dark-theme .blog-details-page {
   color: #e0e0e0;
-  background-color: #121212; /* Тёмный фон */
-  padding: 20px;
-  margin-top: 60px;
-  min-height: 100vh;
+  background-color: #121212;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -614,16 +611,12 @@
   position: sticky;
   top: 120px;
   left: 10px;
-  background-color: #1e88e5; /* Темно-синий фон */
+  background-color: #1e88e5; 
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  z-index: 1000;
+  z-index: 1;
   box-shadow: 0 4px 8px rgba(30, 136, 229, 0.4);
 }
 
@@ -636,11 +629,10 @@
 .dark-theme .blog-details-container {
   max-width: 1000px;
   margin: 0 auto;
-  background: #1c1c1c; /* Очень тёмный фон */
+  background: #1c1c1c;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Глубокая тень */
   border-radius: 15px;
   overflow: hidden;
-  padding: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeIn 0.5s ease-out;
 }
@@ -661,8 +653,8 @@
 }
 
 .dark-theme .blog-details-title {
-  font-size: 28px;
-  color: #90caf9; /* Светло-голубой */
+  font-size: 22px;
+  color: #90caf9; 
   margin-bottom: 10px;
   text-shadow: 0 2px 4px rgba(144, 202, 249, 0.4);
 }
@@ -756,7 +748,7 @@
 }
 .dark-theme .form-textarea{
     background-color: #2a2a2a; 
-
+    color: #fff;
 }
 .dark-theme .form-input, .form-textarea {
     width: 100%;

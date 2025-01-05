@@ -46,7 +46,7 @@ const Contacts = () => {
             className="contact-form"
             action="https://api.web3forms.com/submit"
             method="POST"
-            onSubmit={handleSubmit}
+           
         >
             <input
                 type="hidden"
@@ -101,7 +101,7 @@ const Contacts = () => {
                     value={formData.message}
                     onChange={(e) => {
                         handleInputChange(e);
-                        e.target.style.height = "auto"; // Автоматическая высота
+                        e.target.style.height = "auto"; 
                         e.target.style.height = e.target.scrollHeight + "px";
                     }}
                     required
