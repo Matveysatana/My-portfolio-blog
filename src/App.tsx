@@ -1,5 +1,6 @@
 import './app.css';
 import './appMedia.css'
+import './appDarkTheme.css'
 import { Routes, Route } from "react-router-dom";
 import Layout from './components/Lauout/Layout';
 import AboutPages from './pages/AboutPage/AboutPages';
@@ -8,8 +9,6 @@ import HomePage from './pages/HomePage/HomePage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import NotFoundPages from './pages/NotFoundPage/NotFoundPages';
 import BlogDetails from 'pages/BlogDetailsPage/BlogDetailsPage';
-
-//  мой код KZZ1HZ36WVEBL5AAR8D4GRAC
 
 
 function App() {

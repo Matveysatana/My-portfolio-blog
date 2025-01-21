@@ -26,6 +26,8 @@ import { Link, useNavigate } from "react-router-dom";
 
 function AboutPages() {
 
+    const navigate = useNavigate();
+
     const sectionAboutMe = useRef(null);
     const sectionSkills = useRef(null);
     const sectionAchivements = useRef(null);
@@ -83,7 +85,7 @@ function AboutPages() {
                             Сейчас я сосредоточен на фронтенд-разработке и изучаю TypeScript и React.
                         </p>
                         <ul className="about-facts">
-                            <li>📍 Живу в Феодосии, Россия</li>
+                            <li>📍 Живу в Феодосии, Крым</li>
                             <li>🎂 Дата рождения: 26.01.2010</li>
                             <li>🎓 Образование: Самоучка с помощью наставника</li>
                             <li>💻 Основные технологии: JavaScript, HTML, CSS, React</li>
@@ -174,7 +176,7 @@ function AboutPages() {
                 <h3 className="section-description">Мои увлечения делают мою жизнь ярче и насыщеннее</h3>
                 <div className="hobbies-grid">
 
-                    <div className="hobby-card">
+                    <div className="hobby-card" onClick={() => navigate('/blog/1')}>
                         <img src={hobby_1} alt="Программирование" className="hobby-image" />
                         <h4 className="hobby-title">Программирование</h4>
                         <p className="hobby-text">Программирование — это не просто моя работа, но и страсть. Я люблю создавать проекты на React,
@@ -183,7 +185,7 @@ function AboutPages() {
                             Программирование для меня — это возможность воплощать идеи в жизнь и постоянно учиться чему-то новому.</p>
                     </div>
 
-                    <div className="hobby-card">
+                    <div className="hobby-card" onClick={() => navigate('/blog/25')}>
                         <img src={hobby_2} alt="Волейбол" className="hobby-image" />
                         <h4 className="hobby-title">Волейбол</h4>
                         <p className="hobby-text"> Волейбол — это моё любимое спортивное увлечение. Я играю в волейбол с друзьями каждую неделю,
@@ -192,7 +194,7 @@ function AboutPages() {
                             на площадке. Волейбол помогает мне отвлечься от работы и зарядиться энергией.</p>
                     </div>
 
-                    <div className="hobby-card">
+                    <div className="hobby-card" onClick={() => navigate('/blog/19')}>
                         <img src={hobby_3} alt="Инвестирование" className="hobby-image" />
                         <h4 className="hobby-title">Инвестирование</h4>
                         <p className="hobby-text"> Инвестирование — это увлечение, которое помогает мне думать о будущем. Я изучаю фондовый рынок,
