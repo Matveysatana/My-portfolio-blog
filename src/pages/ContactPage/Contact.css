@@ -45,14 +45,14 @@
     object-fit: cover;
     border-radius: 50%; /* Круглая форма */
     border: 3px solid #007bff; /* Тонкая обводка */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Тень */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 /* Анимация при наведении */
 .profile-image:hover {
     transform: scale(1.05);
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Заголовок формы */
@@ -83,6 +83,7 @@
     gap: 10px;
     align-items: flex-start;
 }
+
 .form-field-wrraper {
     display: flex;
     gap: 10px;
@@ -107,13 +108,33 @@
     font-size: 1.2rem;
     transition: border-color 0.3s, box-shadow 0.3s;
     box-sizing: border-box;
+
+    &:focus {
+        border-color: #0056b3;
+        outline: none;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    }
 }
 
-.form-input:focus, .form-textarea:focus {
-    border-color: #0056b3;
-    outline: none;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+.form-textarea {
+    resize: none;
+    height: 120px;
 }
+
+.form-input--error {
+    border: 1px solid #dc3545;
+
+    &:focus {
+        box-shadow: 0 0 8px rgba(220, 53, 69, 0.5);
+        border: 1px solid #dc3545;
+    }
+}
+
+.error-label {
+    color: #dc3545;
+    font-size: 1rem;
+}
+
 
 .form-textarea {
     resize: none;
@@ -130,12 +151,23 @@
     font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+    }
 }
 
-.submit-button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
+.submit-button--error {
+    background-color: #afaeae;
+
+    &:hover {
+        background-color: #afaeae;
+        transform: none;
+        cursor: auto;
+    }
 }
+
 
 /* Социальные ссылки */
 .social-section {

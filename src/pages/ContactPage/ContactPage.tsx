@@ -3,8 +3,38 @@ import contactPhoto from "assets/images/contactPhoto.jpg"
 import UserIkon from "assets/icons/svg/user.svg"
 import EmailIcon from "assets/icons/svg/email.svg"
 import MessageIcon from "assets/icons/svg/message.svg"
+import {useFormik} from "formik";
+import {contactFormScheme} from "../../utils/form-validation";
+import {FeedbackValuesType} from "../../types/contact-form-type";
+import {sendEmail} from "../../api/smtp-action";
 
 const Contacts = () => {
+    // const [feedbackStatus, setFeedbackStatus] = useState<FeedbackStatusType>('idle')
+    // const [isSending, setIsSending] = useState(true)
+
+    const formik = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            message: '',
+        },
+        validate: contactFormScheme,
+        onSubmit: async (values: FeedbackValuesType) => await onSubmitHandler(values),
+    })
+
+    const onSubmitHandler = async (values: FeedbackValuesType) => {
+        console.log(values)
+
+       try {
+        const response =  await sendEmail(values)
+
+           console.log(response)
+
+       } catch (e) {
+            console.error(e)
+       }
+    }
+
     return (
         <div className="contact-container">
             {/* Вступительный текст и фото */}
@@ -23,8 +53,8 @@ const Contacts = () => {
 
 
             <h2 className="form-title">Напишите мне</h2>
-            <form className="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="36369b66-0146-43a6-9829-addfa4fe78b7"></input>
+            <form className="contact-form" onSubmit={formik.handleSubmit}>
+                {/*<input type="hidden" name="access_key" value="36369b66-0146-43a6-9829-addfa4fe78b7"></input>*/}
 
                 {/* Имя */}
                 <div className="form-field">
@@ -35,10 +65,13 @@ const Contacts = () => {
                     <input
                         type="text"
                         name="name"
-                        className="form-input"
+                        value={formik.values.name}
+                        onChange={formik.handleChange}
+                        className={`form-input ${formik.errors.name ? 'form-input--error' : ''}`}
                         placeholder="Введите свое имя"
                         required
                     />
+                    {formik.errors.name && <label htmlFor="name" className="error-label">{formik.errors.name}</label>}
                 </div>
 
                 {/* Email */}
@@ -50,10 +83,13 @@ const Contacts = () => {
                     <input
                         type="email"
                         name="email"
-                        className="form-input"
+                        value={formik.values.email}
+                        onChange={formik.handleChange}
+                        className={`form-input ${formik.errors.email ? 'form-input--error' : ''}`}
                         placeholder="Введите ваш email"
                         required
                     />
+                    {formik.errors.email && <label htmlFor="email" className="error-label">{formik.errors.email}</label>}
                 </div>
 
                 {/* Сообщение */}
@@ -64,13 +100,25 @@ const Contacts = () => {
                     </div>
                     <textarea
                         name="message"
-                        className="form-textarea"
+                        value={formik.values.message}
+                        onChange={formik.handleChange}
+                        className={`form-textarea ${formik.errors.message ? 'form-input--error' : ''}`}
                         placeholder="Введите ваше сообщение"
                         required
+                        onInput={(e) => {
+                            const target = e.target as HTMLTextAreaElement;
+                            target.style.height = 'auto';
+                            target.style.height = `${target.scrollHeight}px`;
+                        }}
                     ></textarea>
+                    {formik.errors.message && <label htmlFor="message" className="error-label">{formik.errors.message}</label>}
                 </div>
 
-                <button type="submit" className="submit-button">
+                <button
+                  type="submit"
+                  className={`submit-button ${Object.keys(formik.errors).length ? 'submit-button--error' : ''}`}
+                  disabled={Object.keys(formik.errors).length > 0}
+                >
                     Отправить
                 </button>
             </form>
