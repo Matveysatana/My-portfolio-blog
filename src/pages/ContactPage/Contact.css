@@ -109,6 +109,8 @@
     transition: border-color 0.3s, box-shadow 0.3s;
     box-sizing: border-box;
     background-color: #fff;
+    color: #333;
+
 
     &:focus {
         border-color: #0056b3;
