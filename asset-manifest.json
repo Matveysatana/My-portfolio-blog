@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-portfolio-blog/static/css/main.d9ad30db.css",
-    "main.js": "/My-portfolio-blog/static/js/main.090eab81.js",
+    "main.css": "/My-portfolio-blog/static/css/main.d3b28a37.css",
+    "main.js": "/My-portfolio-blog/static/js/main.a404ee0a.js",
     "static/media/cherst.goal.png": "/My-portfolio-blog/static/media/cherst.goal.1c261a15212d34b67342.png",
     "static/media/travel.goal.png": "/My-portfolio-blog/static/media/travel.goal.d0ad867538ef29c318d3.png",
     "static/media/education.goal.png": "/My-portfolio-blog/static/media/education.goal.ec197bb573661c056f41.png",
@@ -54,11 +54,11 @@
     "static/media/framework_prog.jpeg": "/My-portfolio-blog/static/media/framework_prog.7ab7fc98c6be693eb3bd.jpeg",
     "static/media/Termina-Medium.otf": "/My-portfolio-blog/static/media/Termina-Medium.9c4a6b594815816d6be6.otf",
     "index.html": "/My-portfolio-blog/index.html",
-    "main.d9ad30db.css.map": "/My-portfolio-blog/static/css/main.d9ad30db.css.map",
-    "main.090eab81.js.map": "/My-portfolio-blog/static/js/main.090eab81.js.map"
+    "main.d3b28a37.css.map": "/My-portfolio-blog/static/css/main.d3b28a37.css.map",
+    "main.a404ee0a.js.map": "/My-portfolio-blog/static/js/main.a404ee0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9ad30db.css",
-    "static/js/main.090eab81.js"
+    "static/css/main.d3b28a37.css",
+    "static/js/main.a404ee0a.js"
   ]
 }
