@@ -18,15 +18,10 @@ const Contacts = () => {
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
 
-    const handleSubmit = (e: any) => {
-        e.preventDefault();
-        // Очистка полей после отправки
-        setFormData({ name: "", email: "", message: "" });
-        alert("Форма отправлена!");
-    };
+
     return (
         <div className="contact-container">
-            {/* Вступительный текст и фото */}
+
             <div className="header-section">
                 <div className="text-content">
                     <h1 className="title">Давайте останемся на связи!</h1>
