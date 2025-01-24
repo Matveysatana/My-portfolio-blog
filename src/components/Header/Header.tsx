@@ -26,7 +26,10 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, setIsDarkMode }) => {
         <header className={`header ${isScrolled ? "scrolled" : ""} ${isDarkMode ? "dark" : ""}`}>
             <div className="header-container">
                 <div className="logo">
-                    <Link to="/">
+                    <Link to="/"
+                        onClick={() => {
+                            window.scrollTo(0, 0);
+                        }}>
                         <img src={LogoIcn} alt="logo" className="logo-image" />
                     </Link>
                 </div>

@@ -12,7 +12,6 @@ export const skills:ISkills[] = [
         name: "CSS",
         description: "Стилизация и оформление сайтов.",
         percentage: 70,
-
         id: 2
     },
     {

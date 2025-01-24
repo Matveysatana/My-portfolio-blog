@@ -3,6 +3,7 @@ import TgIcn from 'assets/icons/svg/telegramm.svg';
 import GhIcn from 'assets/icons/svg/github.svg';
 import { NavLink } from 'react-router-dom';
 import LogoIcn from 'assets/images/logo.webp';
+import { Link } from 'react-router-dom';
 import "./Footer.css"
 
 
@@ -12,7 +13,12 @@ const Footer = () => {
             <footer className="footer">
                 <div className="footer-navigation">
                     <div className="logo">
-                        <img src={LogoIcn} alt="logo" className="logo-image" />
+                        <Link to="/"
+                            onClick={() => {
+                                window.scrollTo(0, 0);
+                            }}>
+                            <img src={LogoIcn} alt="logo" className="logo-image" />
+                        </Link>
                     </div>
 
                     <nav className="navigate">

@@ -1,23 +1,21 @@
-import UserIkon from "assets/icons/svg/user.svg"
-import EmailIcon from "assets/icons/svg/email.svg"
-import MessageIcon from "assets/icons/svg/message.svg"
-import contactPhoto from "assets/images/contactPhoto.jpg"
+import UserIkon from "assets/icons/svg/user.svg";
+import EmailIcon from "assets/icons/svg/email.svg";
+import MessageIcon from "assets/icons/svg/message.svg";
+import contactPhoto from "assets/images/contactPhoto.jpg";
+import "./Contact.css";
 import { useFormik } from "formik";
 import { contactFormScheme } from "../../utils/form-validation";
 import { FeedbackValuesType } from "../../types/contact-form-type";
 import { sendEmail } from "../../api/smtp-action";
 import React, { SyntheticEvent, useState } from "react";
-import { Button, IconButton, Snackbar, SnackbarCloseReason } from "@mui/material";
-// import CloseIcon from '@mui/icons-material/Close';
+import { Button, IconButton, Snackbar, SnackbarCloseReason, Alert, CircularProgress } from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
 import { AxiosError } from "axios";
 
 const Contacts = () => {
-  // const [feedbackStatus, setFeedbackStatus] = useState<FeedbackStatusType>('idle')
-  // const [isSending, setIsSending] = useState(true)
-
   const [open, setOpen] = useState<boolean>(false);
-  const [message, setMessage] = useState<string>('')
-
+  const [message, setMessage] = useState<string>('');
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const formik = useFormik({
     initialValues: {
@@ -27,35 +25,33 @@ const Contacts = () => {
     },
     validate: contactFormScheme,
     onSubmit: async (values: FeedbackValuesType) => await onSubmitHandler(values),
-  })
+  });
 
   const onSubmitHandler = async (values: FeedbackValuesType) => {
-    console.log(values)
+    setIsLoading(true); // Начинаем загрузку
 
     try {
-      const response = await sendEmail(values)
-
-      console.log(response)
+      const response = await sendEmail(values);
 
       if (response.status === 200) {
-        setOpen(true)
-        setMessage(response.data)
-        formik.resetForm()
+        setOpen(true);
+        setMessage(response.data);
+        formik.resetForm();
 
         const timer = setTimeout(() => {
-          setOpen(false)
-          setMessage('')
-          clearTimeout(timer)
-        }, 6000)
+          setOpen(false);
+          setMessage('');
+          clearTimeout(timer);
+        }, 6000);
       }
-
-
     } catch (e) {
-      const err = e as Error | AxiosError<{ error: string }>
-      console.error(e)
-      setMessage(err.message)
+      const err = e as Error | AxiosError<{ error: string }>;
+      console.error(e);
+      setMessage(err.message);
+    } finally {
+      setIsLoading(false); // Завершаем загрузку, независимо от результата
     }
-  }
+  };
 
   const handleClose = (
     event: SyntheticEvent | Event,
@@ -68,7 +64,6 @@ const Contacts = () => {
     setOpen(false);
   };
 
-
   const action = (
     <React.Fragment>
       <Button color="secondary" size="small" onClick={handleClose}>
@@ -80,7 +75,7 @@ const Contacts = () => {
         color="inherit"
         onClick={handleClose}
       >
-        {/*<CloseIcon fontSize="small"/>*/}
+        <CloseIcon fontSize="small" />
       </IconButton>
     </React.Fragment>
   );
@@ -101,7 +96,6 @@ const Contacts = () => {
           <img src={contactPhoto} alt="Ваше фото" className="profile-image" />
         </div>
       </div>
-
 
       <h2 className="form-title">Напишите мне</h2>
       <form className="contact-form" onSubmit={formik.handleSubmit}>
@@ -162,13 +156,16 @@ const Contacts = () => {
           {formik.errors.message && <label htmlFor="message" className="error-label">{formik.errors.message}</label>}
         </div>
 
-        <button
+        <Button
           type="submit"
-          className={`submit-button ${Object.keys(formik.errors).length ? 'submit-button--error' : ''}`}
-          disabled={Object.keys(formik.errors).length > 0}
+          variant="contained"
+          color="primary"
+          size="large" // Используем большой размер
+          disabled={Object.keys(formik.errors).length > 0 || isLoading}
+          startIcon={isLoading ? <CircularProgress size={20} color="inherit" /> : null}
         >
-          Отправить
-        </button>
+          {isLoading ? 'Отправка...' : 'Отправить'}
+        </Button>
       </form>
 
       {/* Социальные ссылки */}
@@ -185,13 +182,16 @@ const Contacts = () => {
         </a>
       </div>
 
-      <Snackbar
-        open={open}
-        autoHideDuration={6000}
-        onClose={handleClose}
-        message={message}
-        action={action}
-      />
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert
+          onClose={handleClose}
+          severity="success"
+          variant="filled"
+          sx={{ width: '100%' }}
+        >
+          {message}
+        </Alert>
+      </Snackbar>
     </div>
   );
 };
