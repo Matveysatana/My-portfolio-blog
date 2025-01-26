@@ -790,3 +790,8 @@
     background-color: #0056b3;
     transform: translateY(-2px);
 }
+
+
+.dark-theme .greeting-img  {
+  box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+}

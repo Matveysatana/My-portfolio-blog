@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import myPhoto from 'assets/images/momentDevelop.jpg';
+import myPhoto from 'assets/images/myPhoto.png';
 import './HomePage.css';
 
 function HomePage() {

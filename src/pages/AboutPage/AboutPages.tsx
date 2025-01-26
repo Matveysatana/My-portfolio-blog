@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import './AboutPages.css'
 import myPhoto from "assets/images/me.jpg"
-import aboutMe from "assets/images/aboutMe.jpg"
+import aboutMe from "assets/images/aboutMe.png"
 import SkillsCards from "components/SkillsCards/SkillsCards";
 import project_1 from "assets/images/my-projects/project_1.png";
 import project_2 from "assets/images/my-projects/project_2.png";
@@ -58,7 +58,7 @@ function AboutPages() {
                     <div className="greeting">
                         <h3 className='greeting-title'>Добро пожаловать на мою страницу!</h3>
                         <p className='greeting-description'>
-                            Привет! Меня зовут Матвей, и я рад, что ты заглянул сюда.
+                            Привет! Я рад, что ты заглянул сюда.
                             Это мой маленький уголок в интернете, где я делюсь своими мыслями, увлечениями и мечтами.
                             Здесь ты сможешь узнать, что вдохновляет меня, чем я занимаюсь и к чему стремлюсь.
                             Надеюсь, моя история будет интересной и, возможно, даже вдохновляющей для тебя!

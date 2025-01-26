@@ -1,9 +1,10 @@
 import { skills } from 'store/skils';
-import { skillDetails } from 'store/skillDetails'; 
+import { skillDetails } from 'store/skillDetails';
 import './SkillsCards.css';
 import { ISkills } from 'types/skils-type';
 import { ImageDefiner } from 'utils/image-definer';
-import { Modal, Box, Typography } from '@mui/material';
+import { Modal, Box, Typography, IconButton } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close'; // Иконка крестика
 import { useState } from 'react';
 
 const SkillsCards = () => {
@@ -57,13 +58,29 @@ const SkillsCards = () => {
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-            width: 400,
+            width: { xs: '85%', sm: '80%', md: '400px' }, // Уменьшили ширину на xs
             bgcolor: 'background.paper',
             boxShadow: 24,
             p: 4,
-            borderRadius: 2,
+            borderRadius: '12px', // Закругленные углы
+            maxHeight: '90vh', // Ограничение по высоте
+            overflowY: 'auto', // Скролл, если контент не помещается
           }}
         >
+          {/* Кнопка закрытия */}
+          <IconButton
+            aria-label="close"
+            onClick={handleClose}
+            sx={{
+              position: 'absolute',
+              right: 8,
+              top: 8,
+              color: (theme) => theme.palette.grey[500],
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+
           {selectedSkill && (
             <>
               <Typography id="modal-modal-title" variant="h6" component="h2">

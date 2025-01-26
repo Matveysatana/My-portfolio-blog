@@ -1,7 +1,7 @@
 import UserIkon from "assets/icons/svg/user.svg";
 import EmailIcon from "assets/icons/svg/email.svg";
 import MessageIcon from "assets/icons/svg/message.svg";
-import contactPhoto from "assets/images/contactPhoto.jpg";
+import contactPhoto from "assets/images/contactPhoto.png";
 import "./Contact.css";
 import { useFormik } from "formik";
 import { contactFormScheme } from "../../utils/form-validation";
@@ -13,6 +13,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { AxiosError } from "axios";
 
 const Contacts = () => {
+
   const [open, setOpen] = useState<boolean>(false);
   const [message, setMessage] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -82,20 +83,27 @@ const Contacts = () => {
 
   return (
     <div className="contact-container">
-      {/* Вступительный текст и фото */}
-      <div className="header-section">
-        <div className="text-content">
-          <h1 className="title">Давайте останемся на связи!</h1>
-          <p className="description">
-            Это место, где вы можете оставить сообщение, поделиться своими идеями или задать вопрос. Также вы можете
-            найти меня в социальных сетях.
-            Спасибо, что посетили мой сайт!
-          </p>
+      <div className="conteiner">
+        <div className="greeting-page">
+          <div className="greeting">
+            <h3 className='greeting-title'>Давайте останемся на связи!</h3>
+            <p className='greeting-description'>Это место, где вы можете оставить сообщение, поделиться своими идеями или задать вопрос. Также вы можете
+              найти меня в социальных сетях.
+              Спасибо, что посетили мой сайт!</p>
+
+          </div>
+
+          <div className="greeting">
+            <img src={contactPhoto} alt="фото автора" className="greeting-img" />
+          </div>
         </div>
-        <div className="image-container">
-          <img src={contactPhoto} alt="Ваше фото" className="profile-image" />
-        </div>
+
       </div>
+
+
+
+
+
 
       <h2 className="form-title">Напишите мне</h2>
       <form className="contact-form" onSubmit={formik.handleSubmit}>
