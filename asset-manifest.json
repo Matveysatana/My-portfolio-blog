@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-portfolio-blog/static/css/main.1380166d.css",
-    "main.js": "/My-portfolio-blog/static/js/main.0ee0e76c.js",
+    "main.css": "/My-portfolio-blog/static/css/main.ab1685af.css",
+    "main.js": "/My-portfolio-blog/static/js/main.050466ec.js",
     "static/media/cherst.goal.png": "/My-portfolio-blog/static/media/cherst.goal.1c261a15212d34b67342.png",
     "static/media/travel.goal.png": "/My-portfolio-blog/static/media/travel.goal.d0ad867538ef29c318d3.png",
     "static/media/education.goal.png": "/My-portfolio-blog/static/media/education.goal.ec197bb573661c056f41.png",
@@ -19,14 +19,15 @@
     "static/media/start_invest.png": "/My-portfolio-blog/static/media/start_invest.88f90de951c39b238ff0.png",
     "static/media/start_buisnes.png": "/My-portfolio-blog/static/media/start_buisnes.00ba6d80c444f10cc37a.png",
     "static/media/health.goal.png": "/My-portfolio-blog/static/media/health.goal.08f3b78092da4f943348.png",
+    "static/media/aboutMe.png": "/My-portfolio-blog/static/media/aboutMe.f93d9bf0bdf774332644.png",
     "static/media/project_2.png": "/My-portfolio-blog/static/media/project_2.8c5a97a37b4a72d9da83.png",
     "static/media/project_3.png": "/My-portfolio-blog/static/media/project_3.843f2b82d7e741e1e610.png",
     "static/media/morningRun_sport.png": "/My-portfolio-blog/static/media/morningRun_sport.251fe1f68bcae6801ba2.png",
     "static/media/history_voley.png": "/My-portfolio-blog/static/media/history_voley.3621fc234f3c3565e37c.png",
     "static/media/best_books.png": "/My-portfolio-blog/static/media/best_books.37a0587e79705a522c6a.png",
-    "static/media/project_1.png": "/My-portfolio-blog/static/media/project_1.244c833fb55e29871069.png",
     "static/media/painting_drow.png": "/My-portfolio-blog/static/media/painting_drow.3c81730734a8754522b5.png",
     "static/media/errors_buisnes.png": "/My-portfolio-blog/static/media/errors_buisnes.cbae5a6f6e6895c193cf.png",
+    "static/media/project_1.png": "/My-portfolio-blog/static/media/project_1.31a57d182efa3af9778e.png",
     "static/media/fastread_books.png": "/My-portfolio-blog/static/media/fastread_books.7562a5970dd6eecbdcfd.png",
     "static/media/base_drow.png": "/My-portfolio-blog/static/media/base_drow.c38ee4dacce9955fea9b.png",
     "static/media/electro_music.png": "/My-portfolio-blog/static/media/electro_music.65cb54d5178e206933f4.png",
@@ -41,24 +42,23 @@
     "static/media/app_english.png": "/My-portfolio-blog/static/media/app_english.c78655e86d8fce118e05.png",
     "static/media/bestWebsite_edu.png": "/My-portfolio-blog/static/media/bestWebsite_edu.831f3e6203a20183759a.png",
     "static/media/rules_voley.png": "/My-portfolio-blog/static/media/rules_voley.37fd621b6886afc0907a.png",
+    "static/media/contactPhoto.png": "/My-portfolio-blog/static/media/contactPhoto.a37360ffa135c6808e79.png",
+    "static/media/myPhoto.png": "/My-portfolio-blog/static/media/myPhoto.0b57d228d885a5487135.png",
     "static/media/footBascet_sport.jpeg": "/My-portfolio-blog/static/media/footBascet_sport.75813a76436b872ad089.jpeg",
     "static/media/tools_music.jpeg": "/My-portfolio-blog/static/media/tools_music.c43f115250d2c7e35cb1.jpeg",
-    "static/media/momentDevelop.jpg": "/My-portfolio-blog/static/media/momentDevelop.1920e3547c070f7b72a1.jpg",
-    "static/media/me.jpg": "/My-portfolio-blog/static/media/me.748ae9bf5f41265655b0.jpg",
-    "static/media/contactPhoto.jpg": "/My-portfolio-blog/static/media/contactPhoto.ca211cb9e4686527c4cc.jpg",
     "static/media/ts_or_js_prog.jpeg": "/My-portfolio-blog/static/media/ts_or_js_prog.ff1ea5716bb5ee3f21ad.jpeg",
-    "static/media/aboutMe.jpg": "/My-portfolio-blog/static/media/aboutMe.bb4a93580139f79a4230.jpg",
     "static/media/start_prog.jpeg": "/My-portfolio-blog/static/media/start_prog.86c70730d723d6a5f34c.jpeg",
     "static/media/logo.webp": "/My-portfolio-blog/static/media/logo.7cca4fd7248a1e355084.webp",
+    "static/media/me.jpg": "/My-portfolio-blog/static/media/me.d0e8f180e0606b5da90e.jpg",
     "static/media/guitar_music.jpeg": "/My-portfolio-blog/static/media/guitar_music.5769adeb45a5d263cd18.jpeg",
     "static/media/framework_prog.jpeg": "/My-portfolio-blog/static/media/framework_prog.7ab7fc98c6be693eb3bd.jpeg",
     "static/media/Termina-Medium.otf": "/My-portfolio-blog/static/media/Termina-Medium.9c4a6b594815816d6be6.otf",
     "index.html": "/My-portfolio-blog/index.html",
-    "main.1380166d.css.map": "/My-portfolio-blog/static/css/main.1380166d.css.map",
-    "main.0ee0e76c.js.map": "/My-portfolio-blog/static/js/main.0ee0e76c.js.map"
+    "main.ab1685af.css.map": "/My-portfolio-blog/static/css/main.ab1685af.css.map",
+    "main.050466ec.js.map": "/My-portfolio-blog/static/js/main.050466ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.1380166d.css",
-    "static/js/main.0ee0e76c.js"
+    "static/css/main.ab1685af.css",
+    "static/js/main.050466ec.js"
   ]
 }
