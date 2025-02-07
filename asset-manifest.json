@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-portfolio-blog/static/css/main.ab1685af.css",
-    "main.js": "/My-portfolio-blog/static/js/main.050466ec.js",
+    "main.css": "/My-portfolio-blog/static/css/main.42b09ca3.css",
+    "main.js": "/My-portfolio-blog/static/js/main.43314574.js",
     "static/media/cherst.goal.png": "/My-portfolio-blog/static/media/cherst.goal.1c261a15212d34b67342.png",
     "static/media/travel.goal.png": "/My-portfolio-blog/static/media/travel.goal.d0ad867538ef29c318d3.png",
     "static/media/education.goal.png": "/My-portfolio-blog/static/media/education.goal.ec197bb573661c056f41.png",
@@ -32,11 +32,13 @@
     "static/media/base_drow.png": "/My-portfolio-blog/static/media/base_drow.c38ee4dacce9955fea9b.png",
     "static/media/electro_music.png": "/My-portfolio-blog/static/media/electro_music.65cb54d5178e206933f4.png",
     "static/media/books_buisnes.png": "/My-portfolio-blog/static/media/books_buisnes.0784a0c78312e83026b8.png",
+    "static/media/Itim-Regular.ttf": "/My-portfolio-blog/static/media/Itim-Regular.38b1e6579a4ae98f4318.ttf",
     "static/media/plan_edu.png": "/My-portfolio-blog/static/media/plan_edu.cd5c5ac355bb39372a8b.png",
     "static/media/sovet_edu.png": "/My-portfolio-blog/static/media/sovet_edu.b7f531a315026f2ec0b4.png",
     "static/media/portfol_invest.png": "/My-portfolio-blog/static/media/portfol_invest.b313c94887ecda9e2faf.png",
     "static/media/films_english.png": "/My-portfolio-blog/static/media/films_english.2207b2c487cf1ac26e40.png",
     "static/media/Montserrat-MediumItalic.ttf": "/My-portfolio-blog/static/media/Montserrat-MediumItalic.e3df6dbac4a6957bd332.ttf",
+    "static/media/Montserrat-Medium.ttf": "/My-portfolio-blog/static/media/Montserrat-Medium.d3f3d769c2fc1af5c0b4.ttf",
     "static/media/project_4.png": "/My-portfolio-blog/static/media/project_4.ce6a195ed4e4fe278048.png",
     "static/media/errors_invest.png": "/My-portfolio-blog/static/media/errors_invest.0c89dc0e5a0bf75e38db.png",
     "static/media/app_english.png": "/My-portfolio-blog/static/media/app_english.c78655e86d8fce118e05.png",
@@ -52,13 +54,12 @@
     "static/media/me.jpg": "/My-portfolio-blog/static/media/me.d0e8f180e0606b5da90e.jpg",
     "static/media/guitar_music.jpeg": "/My-portfolio-blog/static/media/guitar_music.5769adeb45a5d263cd18.jpeg",
     "static/media/framework_prog.jpeg": "/My-portfolio-blog/static/media/framework_prog.7ab7fc98c6be693eb3bd.jpeg",
-    "static/media/Termina-Medium.otf": "/My-portfolio-blog/static/media/Termina-Medium.9c4a6b594815816d6be6.otf",
     "index.html": "/My-portfolio-blog/index.html",
-    "main.ab1685af.css.map": "/My-portfolio-blog/static/css/main.ab1685af.css.map",
-    "main.050466ec.js.map": "/My-portfolio-blog/static/js/main.050466ec.js.map"
+    "main.42b09ca3.css.map": "/My-portfolio-blog/static/css/main.42b09ca3.css.map",
+    "main.43314574.js.map": "/My-portfolio-blog/static/js/main.43314574.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab1685af.css",
-    "static/js/main.050466ec.js"
+    "static/css/main.42b09ca3.css",
+    "static/js/main.43314574.js"
   ]
 }
