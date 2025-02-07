@@ -50,7 +50,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, setIsDarkMode }) => {
                             window.scrollTo(0, 0);
                         }}
                     >
-                        Home
+                        Главная
                     </NavLink>
                     <NavLink
                         to="/about"
@@ -59,7 +59,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, setIsDarkMode }) => {
                             window.scrollTo(0, 0);
                         }}
                     >
-                        About Me
+                        Обо мне
                     </NavLink>
                     <NavLink
                         to="/blog"
@@ -68,7 +68,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, setIsDarkMode }) => {
                             window.scrollTo(0, 0);
                         }}
                     >
-                        Blog
+                        Блог
                     </NavLink>
                     <NavLink
                         to="/contacts"
@@ -77,7 +77,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, setIsDarkMode }) => {
                             window.scrollTo(0, 0);
                         }}
                     >
-                        Contacts
+                        Контакты
                     </NavLink>
 
                     <button
@@ -85,7 +85,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, setIsDarkMode }) => {
                         onClick={() => setIsDarkMode(!isDarkMode)}
                         aria-label="Toggle theme"
                     >
-                        {isDarkMode ? "🌞 Light Mode" : "🌙 Dark Mode"}
+                        {isDarkMode ? "🌞 Светлая тема" : "🌙 Темная тема"}
                     </button>
                 </nav>
             </div>

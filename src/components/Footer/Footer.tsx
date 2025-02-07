@@ -28,7 +28,7 @@ const Footer = () => {
                                 window.scrollTo(0, 0);
                             }}
                         >
-                            Home
+                            Главная
                         </NavLink>
                         <NavLink
                             to="/about"
@@ -36,7 +36,7 @@ const Footer = () => {
                                 window.scrollTo(0, 0);
                             }}
                         >
-                            About Me
+                            Обо мне
                         </NavLink>
                         <NavLink
                             to="/blog"
@@ -44,7 +44,7 @@ const Footer = () => {
                                 window.scrollTo(0, 0);
                             }}
                         >
-                            Blog
+                            Блог
                         </NavLink>
                         <NavLink
                             to="/contacts"
@@ -52,19 +52,19 @@ const Footer = () => {
                                 window.scrollTo(0, 0);
                             }}
                         >
-                            Contacts
+                            Контакты
                         </NavLink>
                     </nav>
 
                     <div className="footer-social">
                         <a href="https://vk.com/woydock" target="blank" className="social-link">
-                            <VkIcn />
+                            <VkIcn className="social-icon" />
                         </a>
                         <a href="https://t.me/Woydok" target="blank" className="social-link">
-                            <TgIcn />
+                            <TgIcn className="social-icon" />
                         </a>
                         <a href="https://github.com/Matveysatana" target="blank" className="social-link">
-                            <GhIcn />
+                            <GhIcn className="social-icon" />
                         </a>
                     </div>
                 </div>

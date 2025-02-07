@@ -1,23 +1,48 @@
+@font-face {
+    font-family: 'FontForTitle'; /* Название шрифта, которое будет использоваться в проекте */
+    src: url('assets/fonts/Montserrat-Medium.ttf') format('truetype'); /* Путь к файлу шрифта */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontForText'; /* Название шрифта, которое будет использоваться в проекте */
+    src: url('assets/fonts/Itim-Regular.ttf') format('truetype'); /* Путь к файлу шрифта */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontForA'; /* Название шрифта, которое будет использоваться в проекте */
+    src: url('assets/fonts/Montserrat-MediumItalic.ttf') format('truetype'); /* Путь к файлу шрифта */
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Termina', 'Montserrat', sans-serif;
     scroll-behavior: smooth;
     transition: background-color 0.3s ease, color 0.3s ease;  
 }
 
+
 :root {
     --dark-color-deskp: #c0c0c0;
 }
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "FontForTitle", sans-serif ;
+}
+
 p {
     color:#555;
+    font-family: "FontForText", sans-serif;
 }
-@font-face {
-    font-family: 'Termina';
-    src: url('./assets/fonts/Termina-Medium.otf') format('truetype');
-    font-family: 'Montserrat';
-    src: url('./assets/fonts/Montserrat-MediumItalic.ttf') format('truetype');
-  }
+
+a, button {
+    font-family: "FontForA", sans-serif;
+}
 
 /* основные стили для блоков */
 .center{

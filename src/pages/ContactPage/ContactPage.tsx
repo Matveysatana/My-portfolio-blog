@@ -180,13 +180,13 @@ const Contacts = () => {
       <div className="social-section">
         <p>Или свяжитесь со мной в соцсетях:</p>
         <a href="https://github.com/Matveysatana" target="_blank" rel="noopener noreferrer" className="social-link">
-          GitHub
+          Гитхаб
         </a>
         <a href="https://vk.com" target="_blank" rel="noopener noreferrer" className="social-link">
-          VK
+          Вконтакте
         </a>
         <a href="https://t.me/Woydok" target="_blank" rel="noopener noreferrer" className="social-link">
-          Telegram
+          Телеграм
         </a>
       </div>
 

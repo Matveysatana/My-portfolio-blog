@@ -1,5 +1,4 @@
 
-
 .about-menu {
   display: flex;
   flex-wrap: wrap; /* Переносим элементы при нехватке места */
@@ -54,6 +53,7 @@ section {
   gap: 30px;
   margin-top: 20px;
   flex-wrap: wrap; /* Добавлено для переноса на маленьких экранах */
+  
 }
 
 .about-image {
@@ -261,13 +261,6 @@ section {
   box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
   transform: translateY(-3px);
 }
-
-
-
-
-
-
-
 
 /* Основные стили */
 .goals-list {
